@@ -1,7 +1,21 @@
-.card {
-    width: 380px;
-    border: solid 2px var(--primary);
-    background-color: var(--cor3);
-    border-radius: 5px;
-    flex-grow: 1;
+.header {
+    background: rgb(33, 159, 255);
+    background: radial-gradient(circle, rgb(33, 159, 255) 0%, rgba(0, 44, 125, 1) 100%);
+}
+
+.ulCabecario {
+    color: rgb(227, 244, 255);
+    height: 120;
+    font-size: 30px;
+}
+
+.button {
+    position: absolute;
+}
+
+@media screen and (max-width: 600px) {
+    .Header {
+        width: 100vw;
+        height: 100vw;
+    }
 }
