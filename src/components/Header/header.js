@@ -11,7 +11,7 @@ export default function Header() {
                 <nav className={styles.cabecario}>
                     <ul className={styles.ulCabecario}>
                         <li className={styles.liElements}><Link href='/'>Home</Link></li>
-                        <li className={styles.liElements}><Link href='/Gêneros'>Gêneros</Link></li>
+                        <li className={styles.liElements}><Link href='/'>Gêneros</Link></li>
                         <li className={styles.liElements}><Link href='/'>Premiações</Link></li>
                         <li className={styles.liElements}><Link href='/'>Profissões</Link></li>
                     </ul>
