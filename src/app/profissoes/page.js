@@ -1,0 +1,13 @@
+'use client'
+import Link from 'next/link';
+import styles from './page.module.css';
+import Image from 'next/image';
+import { useState } from 'react';
+
+export default function Profissoes() {
+    return (
+        <main className={styles.profissoes}>
+            <h1>Teste carai</h1>
+        </main>
+    )
+}
