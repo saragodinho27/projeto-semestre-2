@@ -1,12 +1,12 @@
 'use client'
 import Link from 'next/link';
-import styles from './generos.module.css';
+import styles from './page.module.css';
 import Image from 'next/image';
 import { useState } from 'react';
 
-export default function Gêneros() {
+export default function Generos() {
     return (
-        <main className={styles.Gêneros}>
+        <main className={styles.generos}>
             <h1>Teste carai</h1>
         </main>
     )

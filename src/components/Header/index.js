@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link';
-import styles from './Header.module.css';
+import styles from './index.module.css';
 import Image from 'next/image';
 import { useState } from 'react';
 
@@ -11,8 +11,8 @@ export default function Header() {
                 <nav className={styles.cabecario}>
                     <ul className={styles.ulCabecario}>
                         <li className={styles.liElements}><Link href='/'>Home</Link></li>
-                        <li className={styles.liElements}><Link href='/'>Gêneros</Link></li>
-                        <li className={styles.liElements}><Link href='/'>Premiações</Link></li>
+                        <li className={styles.liElements}><Link href='/generos'>Gêneros</Link></li>
+                        <li className={styles.liElements}><Link href='/premiacoes/page.js'>Premiações</Link></li>
                         <li className={styles.liElements}><Link href='/'>Profissões</Link></li>
                     </ul>
                 </nav>

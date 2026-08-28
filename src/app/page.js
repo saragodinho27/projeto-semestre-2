@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <h1>whgweh</h1>
+        <h1>menino risonho que ri e que sonho</h1>
       </main>
     </div>
   );

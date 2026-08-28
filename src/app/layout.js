@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from '@/components/Header/header';
-import Footer from '@/components/Footer/footer';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'Projeto Cinema',
