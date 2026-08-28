@@ -12,8 +12,8 @@ export default function Header() {
                     <ul className={styles.ulCabecario}>
                         <li className={styles.liElements}><Link href='/'>Home</Link></li>
                         <li className={styles.liElements}><Link href='/generos'>Gêneros</Link></li>
-                        <li className={styles.liElements}><Link href='/premiacoes'>Premiações</Link></li>
-                        <li className={styles.liElements}><Link href=''>Profissões</Link></li>
+                        <li className={styles.liElements}><Link href='/'>Premiações</Link></li>
+                        <li className={styles.liElements}><Link href='/'>Profissões</Link></li>
                     </ul>
                 </nav>
             </header>
