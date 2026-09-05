@@ -4,9 +4,9 @@ import styles from './page.module.css';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-export default function Premiacoes() {
+export default function Glossario() {
     return (
-        <main className={styles.premiacoes}>
+        <main className={styles.profissoes}>
             <h1>Teste carai</h1>
         </main>
     )

@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import styles from './page.module.css';
 import Image from 'next/image';
-import { useState } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function Generos() {
     return (

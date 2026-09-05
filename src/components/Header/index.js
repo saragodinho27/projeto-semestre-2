@@ -11,6 +11,7 @@ export default function Header() {
         { label: 'Gêneros', href: '/generos', icon: Film },
         { label: 'Premiações', href: '/premiacoes', icon: Trophy },
         { label: 'Profissões', href: '/profissoes', icon: Briefcase },
+        { label: 'Glossário', href: '/glossario', icon: Briefcase }
     ];
 
     return (
