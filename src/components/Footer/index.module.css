@@ -1,4 +1,4 @@
 .Footer {
-    background: #50008a;
-    background: linear-gradient(90deg, rgba(80, 0, 138, 1) 0%, rgba(255, 171, 249, 1) 50%, rgba(80, 0, 138, 1) 100%);
+    background: #3e050d;
+    background: radial-gradient(circle,#58111A 0%, #3e050d 100%);
 }
