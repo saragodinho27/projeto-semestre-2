@@ -1,38 +1,43 @@
-'use client'
+'use client';
+import { useState } from "react";
 import Image from "next/image";
-import Image from "next/link";
+import Link from "next/link";
 import styles from "./page.module.css";
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function Home() {
-    // Dados para o carrossel principal
     const mainFeatured = [
         {
             id: 1,
-            title: "Conheça ator que interpretará Dobby na nova série de Harry Potter",
-            subtitle: "Novato tem apenas 17 anos e fez Enola Holmes 2 na Netflix",
-            image: "/images/wesleys", // Crie ou adicione sua imagem na pasta public/images/
+            title: "Conheça os atores que interpretaram os irmãos Weasleys na nova série de Harry Potter",
+            subtitle: "...",
+            image: "/images/wealeys.jpg",
         },
-        // Adicione mais itens para o carrossel aqui
+        {
+            id: 2,
+            title: "Vem ai o novo filme de Senhor dos anéis",
+            subtitle: "A caçada de Gollum",
+            image: "/images/gollum.jpg"
+        }
     ];
 
-    // Dados dos cards inferiores
     const secondaryNews = [
         {
             id: 1,
             title: "Foram necessários 25 anos para que compreendessem essa cena de A Pedra Filosofal",
-            image: "/images/harry-scene.jpg",
+            image: "/images/harryPotterBanner.jpg",
         },
         {
             id: 2,
             title: "Fãs de Dragon Ball estão enfurecidos após divulgação de trailer e data do novo anime",
-            image: "/images/vegeta.jpg",
+            image: "/images/dragonBall.webp",
         },
         {
             id: 3,
-            title: "Esta atriz participou de filme da Marvel antes de parceria com Alan Ritchson em Reacher",
-            image: "/images/reacher.jpg",
+            title: "Homem-Aranha lidera em bilheteria nos EUA e Odisseia é Top 1 global",
+            image: "/images/bilheteria.jpg",
         },
+
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -49,9 +54,8 @@ export default function Home() {
 
     return (
         <main className={styles.container}>
-            <h1 className={styles.sectionTitle}>Séries</h1>
+            <h1 className={styles.sectionTitle}>Notícias!</h1>
 
-            {/* Banner Principal / Carrossel */}
             <section className={styles.heroBanner}>
                 <div className={styles.imageWrapper}>
                     <Image
@@ -64,22 +68,18 @@ export default function Home() {
                     <div className={styles.overlay} />
                 </div>
 
-                {/* Seta Esquerda */}
                 <button className={`${styles.arrowBtn} ${styles.prevBtn}`} onClick={handlePrev} aria-label="Anterior">
                     <ChevronLeft size={24} />
                 </button>
 
-                {/* Seta Direita */}
                 <button className={`${styles.arrowBtn} ${styles.nextBtn}`} onClick={handleNext} aria-label="Próximo">
                     <ChevronRight size={24} />
                 </button>
 
-                {/* Textos sobre o Banner */}
                 <div className={styles.bannerContent}>
                     <h2>{currentSlide.title}</h2>
                     <p>{currentSlide.subtitle}</p>
 
-                    {/* Indicadores do Carrossel (Bolinhas) */}
                     <div className={styles.dotsContainer}>
                         {mainFeatured.map((_, idx) => (
                             <span
@@ -92,7 +92,6 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Grid de Cards Inferiores */}
             <section className={styles.newsGrid}>
                 {secondaryNews.map((news) => (
                     <article key={news.id} className={styles.card}>
