@@ -9,8 +9,8 @@ export default function Home() {
     const mainFeatured = [
         {
             id: 1,
-            title: "Conheça os atores que interpretaram os irmãos Weasleys na nova série de Harry Potter",
-            subtitle: "...",
+            title: "Conheça os atores que interpretaram a família Weasleys na nova série de Harry Potter",
+            subtitle: "Uma adaptação da saga de J.K. Rowling",
             image: "/images/wealeys.jpg",
         },
         {
