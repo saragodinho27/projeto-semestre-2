@@ -1,0 +1,112 @@
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 16px;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #cccccc;
+    margin-bottom: 40px;
+}
+
+.tableWrapper {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 12px;
+    background-color: #1f1f23;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.table th {
+    background-color: #3e050d;
+    color: #ffffff;
+    padding: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #58111a;
+}
+
+.thCenter {
+    text-align: center;
+}
+
+.table td {
+    padding: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    line-height: 1.5;
+    color: #e0e0e0;
+    vertical-align: middle; /* Alinha o texto verticalmente com o meio da imagem */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nomePremio {
+    font-weight: 700;
+    color: #ffffff;
+    white-space: nowrap;
+    width: 20%;
+}
+
+.explicacaoCell {
+    width: 65%;
+}
+
+/* Centraliza a imagem e define um espaço fixo para a coluna do troféu */
+.trofeuCell {
+    text-align: center;
+    width: 15%;
+}
+
+.imageWrapper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 6px;
+    border-radius: 8px;
+    width: 64px;
+    height: 64px;
+}
+
+.trofeuImage {
+    object-fit: contain; /* Garante que o troféu não fique esticado, independente da proporção original */
+}
+
+@media (max-width: 600px) {
+    .table th, .table td {
+        padding: 12px 10px;
+        font-size: 0.88rem;
+    }
+    
+    .imageWrapper {
+        width: 48px;
+        height: 48px;
+    }
+}
