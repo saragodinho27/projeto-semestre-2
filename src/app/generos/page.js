@@ -105,7 +105,7 @@ export default function Generos() {
                 {
                     nome: "Crime",
                     detalhe: "O gênero crime concentra-se em acontecimentos relacionados a crimes e nas pessoas envolvidas neles. A história pode acompanhar investigadores tentando descobrir o responsável por um crime, criminosos planejando suas ações ou pessoas tentando descobrir a verdade. Esse gênero frequentemente se mistura com mistério, suspense, ação e drama. As histórias de crime podem explorar questões relacionadas à justiça, à moralidade, às consequências das escolhas e às relações entre criminosos e investigadores.",
-                    imagens: ["/images/imperdoaveis.jpg", "/images/BB.webp", "/images/chefão.jpg"]
+                    imagens: ["/images/narcos.jpg", "/images/BB.webp", "/images/chefão.jpg"]
                 }
             ]
         },
