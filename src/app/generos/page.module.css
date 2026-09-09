@@ -1,0 +1,205 @@
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 16px 80px;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth; /* Garante rolagem suave nativa para o navegador */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color:#ffdd54;
+}
+
+/* Menu de Abas */
+.tabsMenu {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 8px;
+    border-radius: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabBtn {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #aaaaaa;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+}
+
+.tabBtn:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.activeTab {
+    background: #58111A;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Painel de Conteúdo (Grade superior) */
+.contentPanel {
+    background: #1f1f23;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.infoBox {
+    border-left: 4px solid #ffcc00;
+    padding-left: 16px;
+    margin-bottom: 30px;
+}
+
+.infoBox h2 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.infoBox p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+/* Grade de Itens Transformada em Botões */
+.gridItens {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+.cardItemBtn {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 16px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    transition: all 0.2s ease;
+}
+
+.cardItemBtn:hover {
+    background: #3e050d;
+    border-color: #58111a;
+    transform: translateY(-2px);
+}
+
+.clickHint {
+    font-size: 0.7rem;
+    color: #ffcc00;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.cardItemBtn:hover .clickHint {
+    opacity: 1;
+}
+
+
+.explanationsSection {
+    margin-top: 20px;
+}
+
+.sectionDividerTitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #ffcc00;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+}
+
+.explanationsList {
+    display: flex;
+    flex-direction: column;
+}
+
+.explanationRow {
+    display: flex;
+    padding: 24px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: background-color 0.4s ease;
+    border-radius: 6px;
+}
+
+.explanationRow:target {
+    background-color: rgba(88, 17, 26, 0.2);
+}
+
+.termHeader {
+    width: 25%;
+    flex-shrink: 0;
+}
+
+.termHeader h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.termBody {
+    width: 75%;
+}
+
+.termBody p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #cccccc;
+    margin: 0;
+}
+
+/*=============================Responsividade Mobile==============================*/
+@media (max-width: 768px) {
+    .tabsMenu {
+        flex-direction: column;
+        border-radius: 16px;
+    }
+    
+    .explanationRow {
+        flex-direction: column;
+        gap: 8px;
+        padding: 20px 0;
+    }
+    
+    .termHeader, .termBody {
+        width: 100%;
+    }
+
+    .termHeader h4 {
+        color: #ffffff;
+    }
+    
+    .title {
+        font-size: 1.9rem;
+    }
+}
