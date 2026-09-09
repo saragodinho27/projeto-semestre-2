@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from "next/image";
 import styles from './index.module.css';
 import { ChevronRight, Film, Trophy, Briefcase, Home } from 'lucide-react';
-import { useState } from 'react';
 
 export default function Header() {
     const navItems = [
@@ -17,7 +16,6 @@ export default function Header() {
     return (
         <header className={styles.header}>
             <div className={styles.logoContainer}>
-                <Link href="/">
                     <Image 
                         src="/images/logoCinema.png" 
                         alt="Logo Cinema"
@@ -25,7 +23,6 @@ export default function Header() {
                         height={85}
                         priority
                     />
-                </Link>
             </div>
 
             <nav className={styles.cabecario}>

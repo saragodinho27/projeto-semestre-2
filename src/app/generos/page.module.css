@@ -178,8 +178,36 @@
     margin: 0;
 }
 
+.examplesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.exampleImageWrapper {
+    position: relative;
+    width: 60%;
+    height: 220px; /* Altura padrão para os banners de exemplo */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.exampleImage {
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Pequeno efeito visual de zoom ao passar o mouse */
+.exampleImageWrapper:hover .exampleImage {
+    transform: scale(1.05);
+}
+
 /*=============================Responsividade Mobile==============================*/
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .tabsMenu {
         flex-direction: column;
         border-radius: 16px;
@@ -201,5 +229,14 @@
     
     .title {
         font-size: 1.9rem;
+    }
+
+    .examplesGrid {
+        gap: 8px;
+    }
+    
+    .exampleImageWrapper {
+        width: 70%;
+        height: 150px;
     }
 }

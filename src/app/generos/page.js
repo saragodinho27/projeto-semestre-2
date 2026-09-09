@@ -6,12 +6,23 @@ import { useState } from "react";
 export default function Generos() {
     const [activeTab, setActiveTab] = useState("generos");
 
+    const handleScrollToSection = (idFormatado) => {
+        const elemento = document.getElementById(idFormatado);
+        if (elemento) {
+            elemento.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    };
+
     const dados = {
         generos: {
             titulo: "Gêneros",
             descricao: "A estrutura comercial e narrativa do filme. Define as regras gerais da história.",
             itens: [
-                { nome: "Ação", detalhe: "A ação é um gênero cinematográfico caracterizado por histórias com muitos acontecimentos, conflitos e desafios. Geralmente, os personagens precisam cumprir uma missão, enfrentar obstáculos, escapar de alguma situação ou impedir que algo aconteça. É comum encontrar perseguições, confrontos, corridas, fugas e situações de perigo. O foco costuma estar nas atitudes dos personagens e no desenvolvimento dos acontecimentos. Um filme de ação também pode apresentar outros gêneros, como aventura, ficção científica ou comédia." },
+                {
+                    nome: "Ação",
+                    detalhe: "A ação é um gênero cinematográfico caracterizado por histórias com muitos acontecimentos, conflitos e desafios. Geralmente, os personagens precisam cumprir uma missão, enfrentar obstáculos, escapar de alguma situação ou impedir que algo aconteça. É comum encontrar perseguições, confrontos, corridas, fugas e situações de perigo. O foco costuma estar nas atitudes dos personagens e no desenvolvimento dos acontecimentos. Um filme de ação também pode apresentar outros gêneros, como aventura, ficção científica ou comédia.",
+                    imagens: ["/images/JohnWick.jpg", "/images/missaoImpossivel.webp", "/images/VelozesFuriosos.webp"]
+                },
 
                 { nome: "Comédia", detalhe: "A comédia tem como principal objetivo provocar humor no público. Para isso, pode utilizar situações engraçadas, confusões, personagens com comportamentos divertidos, exageros, ironias e acontecimentos inesperados. A comédia pode contar uma história totalmente voltada para o humor ou combinar o humor com outros gêneros. Além de divertir, algumas comédias também utilizam o humor para fazer críticas à sociedade, aos comportamentos das pessoas ou a determinadas situações." },
 
@@ -90,17 +101,13 @@ export default function Generos() {
         }
     };
 
-    const handleScrollToSection = (idFormatado) => {
-        const elemento = document.getElementById(idFormatado);
-        if (elemento) {
-            elemento.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-    };
-
     return (
         <main className={styles.container}>
             <header className={styles.header}>
                 <h1 className={styles.title}>Gêneros, Temas e Estilos</h1>
+                <p className={styles.subtitle}>
+                    Muitas pessoas misturam esses conceitos, mas eles <strong>não são</strong> a mesma coisa. Escolha uma categoria para explorar.
+                </p>
             </header>
 
             <nav className={styles.tabsMenu}>
@@ -125,8 +132,8 @@ export default function Generos() {
                     {dados[activeTab].itens.map((item, index) => {
                         const idFormatado = `item-${item.nome.toLowerCase().replace(/\s+/g, '-')}`;
                         return (
-                            <button 
-                                key={index} 
+                            <button
+                                key={index}
                                 className={styles.cardItemBtn}
                                 onClick={() => handleScrollToSection(idFormatado)}
                             >
@@ -138,7 +145,7 @@ export default function Generos() {
             </section>
 
             <section className={styles.explanationsSection}>
-                <h3 className={styles.sectionDividerTitle}>Explicação</h3>
+                <h3 className={styles.sectionDividerTitle}>Dicionário de Termos</h3>
                 <div className={styles.explanationsList}>
                     {dados[activeTab].itens.map((item, index) => {
                         const idFormatado = `item-${item.nome.toLowerCase().replace(/\s+/g, '-')}`;
@@ -149,6 +156,21 @@ export default function Generos() {
                                 </div>
                                 <div className={styles.termBody}>
                                     <p>{item.detalhe}</p>
+
+                                    {item.imagens && item.imagens.length > 0 && (
+                                        <div className={styles.examplesGrid}>
+                                            {item.imagens.map((imgUrl, idx) => (
+                                                <div key={idx} className={styles.exampleImageWrapper}>
+                                                    <Image
+                                                        src={imgUrl}
+                                                        alt={`Exemplo de ${item.nome}`}
+                                                        fill
+                                                        className={styles.exampleImage}
+                                                    />
+                                                </div>
+                                            ))}
+                                        </div>
+                                    )}
                                 </div>
                             </article>
                         );
