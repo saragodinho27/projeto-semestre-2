@@ -23,10 +23,10 @@
 
 .tableWrapper {
     width: 100%;
-    overflow-x: auto;
     border-radius: 12px;
     background-color: #1f1f23;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 
 .table {
@@ -52,11 +52,11 @@
 }
 
 .table td {
-    padding: 16px;
+    padding: 20px 16px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    line-height: 1.5;
+    line-height: 1.6;
     color: #e0e0e0;
-    vertical-align: middle; /* Alinha o texto verticalmente com o meio da imagem */
+    vertical-align: middle;
 }
 
 .table tbody tr:nth-child(even) {
@@ -69,44 +69,93 @@
 
 .nomePremio {
     font-weight: 700;
+    font-size: 18px;
     color: #ffffff;
-    white-space: nowrap;
     width: 20%;
 }
 
 .explicacaoCell {
-    width: 65%;
+    width: 60%;
 }
 
-/* Centraliza a imagem e define um espaço fixo para a coluna do troféu */
 .trofeuCell {
     text-align: center;
-    width: 15%;
+    width: 20%;
 }
 
 .imageWrapper {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 8px;
     border-radius: 8px;
-    width: 64px;
-    height: 64px;
+    width: 120px;
+    height: 120px;
 }
 
 .trofeuImage {
-    object-fit: contain; /* Garante que o troféu não fique esticado, independente da proporção original */
+    width: 110%;
+    height: 110%;
+    object-fit: contain;
 }
 
-@media (max-width: 600px) {
-    .table th, .table td {
-        padding: 12px 10px;
-        font-size: 0.88rem;
+/* ============RESPONSIVIDADE (MOBILE) - EMPILHAMENTO VERTICAL PERFECT================================== */
+
+@media (max-width: 768px) {
+    .table thead {
+        display: none;
     }
-    
+
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .table tr {
+        padding: 24px 16px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .table tbody tr:nth-child(even) {
+        background-color: transparent;
+    }
+
+    .nomePremio {
+        font-size: 25px;
+        margin-bottom: 12px;
+        color: #ffcc00;
+        padding: 0;
+        border: none;
+    }
+
+    .explicacaoCell {
+        font-size: 0.95rem;
+        color: #e0e0e0;
+        margin-bottom: 20px;
+        padding: 0;
+        border: none;
+        text-align: justify;
+        line-height: 1.6;
+    }
+
+    .trofeuCell {
+        padding: 0;
+        border: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
     .imageWrapper {
-        width: 48px;
-        height: 48px;
+        width: 130px;
+        height: 130px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
