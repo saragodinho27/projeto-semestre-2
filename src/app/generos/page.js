@@ -24,33 +24,75 @@ export default function Generos() {
                     imagens: ["/images/JohnWick.jpg", "/images/missaoImpossivel.webp", "/images/VelozesFuriosos.webp"]
                 },
 
-                { nome: "Comédia", detalhe: "A comédia tem como principal objetivo provocar humor no público. Para isso, pode utilizar situações engraçadas, confusões, personagens com comportamentos divertidos, exageros, ironias e acontecimentos inesperados. A comédia pode contar uma história totalmente voltada para o humor ou combinar o humor com outros gêneros. Além de divertir, algumas comédias também utilizam o humor para fazer críticas à sociedade, aos comportamentos das pessoas ou a determinadas situações." },
+                {
+                    nome: "Comédia",
+                    detalhe: "A comédia tem como principal objetivo provocar humor no público. Para isso, pode utilizar situações engraçadas, confusões, personagens com comportamentos divertidos, exageros, ironias e acontecimentos inesperados. A comédia pode contar uma história totalmente voltada para o humor ou combinar o humor com outros gêneros. Além de divertir, algumas comédias também utilizam o humor para fazer críticas à sociedade, aos comportamentos das pessoas ou a determinadas situações.",
+                    imagens: ["/images/branquelas.jpg", "/images/chris.webp", "/images/theOffice.jpg"]
+                },
 
-                { nome: "Drama", detalhe: "O drama dá grande importância aos sentimentos, conflitos e problemas enfrentados pelos personagens. As histórias podem abordar dificuldades familiares, perdas, mudanças, decisões complicadas, relacionamentos e momentos importantes da vida. O objetivo é mostrar como os personagens lidam com essas situações e como elas podem transformá-los. Um drama não precisa ser necessariamente triste, pois o gênero está principalmente relacionado à presença de conflitos humanos e emocionais." },
+                { nome: "Drama", 
+                    detalhe: "O drama dá grande importância aos sentimentos, conflitos e problemas enfrentados pelos personagens. As histórias podem abordar dificuldades familiares, perdas, mudanças, decisões complicadas, relacionamentos e momentos importantes da vida. O objetivo é mostrar como os personagens lidam com essas situações e como elas podem transformá-los. Um drama não precisa ser necessariamente triste, pois o gênero está principalmente relacionado à presença de conflitos humanos e emocionais.",
+                imagens: ["/images/extraordinario.jpg", "/images/vento.jpg", "/images/milagre.jpg"]
+                },
 
-                { nome: "Terror", detalhe: "O terror é um gênero criado principalmente para provocar medo, tensão ou sensação de ameaça no público. As histórias podem envolver criaturas, fantasmas, acontecimentos sobrenaturais, lugares assustadores, situações perigosas ou ameaças desconhecidas. Também existe o terror psicológico, que trabalha mais com os pensamentos, medos e percepções dos personagens. O objetivo é criar uma atmosfera na qual o público sinta que alguma coisa perigosa ou assustadora pode acontecer." },
+                { nome: "Terror", 
+                    detalhe: "O terror é um gênero criado principalmente para provocar medo, tensão ou sensação de ameaça no público. As histórias podem envolver criaturas, fantasmas, acontecimentos sobrenaturais, lugares assustadores, situações perigosas ou ameaças desconhecidas. Também existe o terror psicológico, que trabalha mais com os pensamentos, medos e percepções dos personagens. O objetivo é criar uma atmosfera na qual o público sinta que alguma coisa perigosa ou assustadora pode acontecer.",
+                    imagens: ["/images/invocaçãoDoMal.jpg", "/images/hillHouse.jpg", "/images/it.jpg"]
+                 },
 
-                { nome: "Romance", detalhe: "O romance apresenta relacionamentos amorosos como uma parte importante da história. A narrativa pode acompanhar a aproximação entre duas pessoas, seus conflitos, suas diferenças, suas escolhas e as dificuldades que enfrentam para manter o relacionamento. O romance pode ser combinado com outros gêneros, como comédia, drama, ação ou fantasia. É importante não confundir o gênero romance com o tema amor, pois uma história pode apresentar amor como tema sem ser necessariamente do gênero romance." },
+                { nome: "Romance", 
+                    detalhe: "O romance apresenta relacionamentos amorosos como uma parte importante da história. A narrativa pode acompanhar a aproximação entre duas pessoas, seus conflitos, suas diferenças, suas escolhas e as dificuldades que enfrentam para manter o relacionamento. O romance pode ser combinado com outros gêneros, como comédia, drama, ação ou fantasia. É importante não confundir o gênero romance com o tema amor, pois uma história pode apresentar amor como tema sem ser necessariamente do gênero romance.",
+                imagens: ["/images/garotosQueJáAmei.jpg", "/images/diarioPaixao.jpg", "/images/titanic.jpg"]
+             },
 
-                { nome: "Ficção Científica", detalhe: "A ficção científica utiliza ideias relacionadas à ciência, tecnologia e possibilidades imaginadas. As histórias podem apresentar viagens espaciais, robôs, inteligência artificial, viagens no tempo, outros planetas, tecnologias avançadas ou sociedades futuristas. Muitas obras desse gênero procuram imaginar como seria o mundo caso determinada descoberta ou tecnologia existisse. Além de apresentar coisas futuristas, a ficção científica também pode discutir problemas humanos, sociais e éticos relacionados ao uso da ciência e da tecnologia." },
+                { nome: "Ficção Científica", 
+                    detalhe: "A ficção científica utiliza ideias relacionadas à ciência, tecnologia e possibilidades imaginadas. As histórias podem apresentar viagens espaciais, robôs, inteligência artificial, viagens no tempo, outros planetas, tecnologias avançadas ou sociedades futuristas. Muitas obras desse gênero procuram imaginar como seria o mundo caso determinada descoberta ou tecnologia existisse. Além de apresentar coisas futuristas, a ficção científica também pode discutir problemas humanos, sociais e éticos relacionados ao uso da ciência e da tecnologia.",
+                imagens: ["/images/interestelar.jpg", "/images/estrelas.jpg", "/images/strangerThings.jpg"]
+             },
 
-                { nome: "Fantasia", detalhe: "A fantasia é um gênero que apresenta elementos que não existem ou não funcionam de acordo com as regras do mundo real. Pode envolver magia, criaturas fantásticas, poderes sobrenaturais, mundos imaginários, reinos fictícios e objetos mágicos. As histórias de fantasia normalmente criam suas próprias regras para o funcionamento daquele universo. Mesmo sendo imaginárias, elas podem abordar temas muito humanos, como amizade, coragem, família, poder e crescimento pessoal." },
+                { nome: "Fantasia", 
+                    detalhe: "A fantasia é um gênero que apresenta elementos que não existem ou não funcionam de acordo com as regras do mundo real. Pode envolver magia, criaturas fantásticas, poderes sobrenaturais, mundos imaginários, reinos fictícios e objetos mágicos. As histórias de fantasia normalmente criam suas próprias regras para o funcionamento daquele universo. Mesmo sendo imaginárias, elas podem abordar temas muito humanos, como amizade, coragem, família, poder e crescimento pessoal.",
+                imagens: ["/images/harryPotter.jpg", "/images/senhorDosAnéis.jpg", "/images/narnia.jpg"]
+             },
 
-                { nome: "Suspense", detalhe: "O suspense é um gênero que procura manter o público em estado de expectativa e tensão. Normalmente existe algum perigo, segredo, ameaça ou problema que ainda não foi resolvido. A história apresenta informações aos poucos, fazendo com que o público queira descobrir o que acontecerá em seguida. O suspense pode aparecer em histórias de ação, terror, crime ou mistério. Sua principal característica é criar a sensação de que algo importante está prestes a acontecer." },
+                { nome: "Suspense", 
+                    detalhe: "O suspense é um gênero que procura manter o público em estado de expectativa e tensão. Normalmente existe algum perigo, segredo, ameaça ou problema que ainda não foi resolvido. A história apresenta informações aos poucos, fazendo com que o público queira descobrir o que acontecerá em seguida. O suspense pode aparecer em histórias de ação, terror, crime ou mistério. Sua principal característica é criar a sensação de que algo importante está prestes a acontecer.",
+                imagens: ["/images/garotaExemplar.webp", "/images/ilhaDoMedo.jpg", "/images/you.jpg"]
+                },
 
-                { nome: "Mistério", detalhe: "O mistério é um gênero baseado principalmente na descoberta de algo desconhecido. Pode envolver um crime, um desaparecimento, um segredo, uma mensagem misteriosa ou algum acontecimento difícil de explicar. Durante a história, são apresentadas pistas que ajudam os personagens e o público a tentar descobrir a resposta. O mistério geralmente faz o espectador pensar, analisar informações e tentar descobrir a solução antes que ela seja revelada." },
+                { nome: "Mistério", 
+                    detalhe: "O mistério é um gênero baseado principalmente na descoberta de algo desconhecido. Pode envolver um crime, um desaparecimento, um segredo, uma mensagem misteriosa ou algum acontecimento difícil de explicar. Durante a história, são apresentadas pistas que ajudam os personagens e o público a tentar descobrir a resposta. O mistério geralmente faz o espectador pensar, analisar informações e tentar descobrir a solução antes que ela seja revelada.",
+                imagens: ["/images/knivesOut.jpg", "/images/sherlock.jpg", "/images/homicidios.webp"]
+                },
 
-                { nome: "Aventura", detalhe: "A aventura é um gênero baseado em jornadas, explorações, missões e desafios. Os personagens normalmente precisam viajar, descobrir lugares, encontrar alguma coisa ou cumprir determinado objetivo. Durante essa jornada, eles enfrentam obstáculos que testam suas habilidades e sua determinação. A aventura pode acontecer em lugares reais, históricos, futuristas ou completamente imaginários e pode ser combinada com ação, fantasia ou ficção científica." },
+                { nome: "Aventura", 
+                    detalhe: "A aventura é um gênero baseado em jornadas, explorações, missões e desafios. Os personagens normalmente precisam viajar, descobrir lugares, encontrar alguma coisa ou cumprir determinado objetivo. Durante essa jornada, eles enfrentam obstáculos que testam suas habilidades e sua determinação. A aventura pode acontecer em lugares reais, históricos, futuristas ou completamente imaginários e pode ser combinada com ação, fantasia ou ficção científica.",
+                imagens: ["/images/jurassicPark.webp", "/images/indianaJones.webp", "/images/foraDoMapa.jpg"] },
 
-                { nome: "Animação", detalhe: "A animação é uma forma de produção audiovisual em que o movimento é criado por meio de imagens produzidas ou manipuladas para dar a impressão de movimento. Ela pode utilizar desenhos, imagens digitais, modelos tridimensionais ou técnicas como stop motion. A animação não determina necessariamente o tipo de história, pois pode apresentar comédia, ação, drama, aventura, fantasia ou ficção científica. Por isso, uma animação pode abordar praticamente qualquer gênero ou tema." },
+                { nome: "Animação", 
+                    detalhe: "A animação é uma forma de produção audiovisual em que o movimento é criado por meio de imagens produzidas ou manipuladas para dar a impressão de movimento. Ela pode utilizar desenhos, imagens digitais, modelos tridimensionais ou técnicas como stop motion. A animação não determina necessariamente o tipo de história, pois pode apresentar comédia, ação, drama, aventura, fantasia ou ficção científica. Por isso, uma animação pode abordar praticamente qualquer gênero ou tema.",
+                    imagens: ["/images/toyStory.jpg", "/images/aranhaVerso.jpg", "/images/pony.jpg"]
+                },
 
-                { nome: "Documentário", detalhe: "O documentário é um gênero voltado principalmente para acontecimentos, pessoas, lugares, fatos ou situações relacionados ao mundo real. Ele pode utilizar entrevistas, imagens reais, documentos, gravações antigas, fotografias e narração. O objetivo pode ser informar, investigar, registrar acontecimentos ou apresentar diferentes perspectivas sobre determinado assunto. Existem documentários científicos, históricos, sociais, esportivos, ambientais e de vários outros tipos." },
+                { nome: "Documentário", 
+                    detalhe: "O documentário é um gênero voltado principalmente para acontecimentos, pessoas, lugares, fatos ou situações relacionados ao mundo real. Ele pode utilizar entrevistas, imagens reais, documentos, gravações antigas, fotografias e narração. O objetivo pode ser informar, investigar, registrar acontecimentos ou apresentar diferentes perspectivas sobre determinado assunto. Existem documentários científicos, históricos, sociais, esportivos, ambientais e de vários outros tipos.",
+                imagens: ["/images/dinossauros.jpg", "/images/dilemaRedes.jpeg", "/images/vidaPlaneta.jpg"]
+                },
 
-                { nome: "Musical", detalhe: "O musical é um gênero em que a música possui uma função importante dentro da narrativa. As músicas e apresentações podem ajudar a mostrar os sentimentos dos personagens, desenvolver acontecimentos ou transmitir informações. Diferentemente de simplesmente colocar uma música de fundo, no musical a música pode fazer parte da própria história. Esse gênero também pode ser combinado com comédia, romance, drama, fantasia ou aventura." },
+                { nome: "Musical", 
+                    detalhe: "O musical é um gênero em que a música possui uma função importante dentro da narrativa. As músicas e apresentações podem ajudar a mostrar os sentimentos dos personagens, desenvolver acontecimentos ou transmitir informações. Diferentemente de simplesmente colocar uma música de fundo, no musical a música pode fazer parte da própria história. Esse gênero também pode ser combinado com comédia, romance, drama, fantasia ou aventura.",
+                imagens: ["/images/reiDoShow.jpg", "/images/matilda.jpg", "/images/wicked.webp"]
+             },
 
-                { nome: "Faroeste", detalhe: "O faroeste, também conhecido como western, é um gênero tradicionalmente relacionado ao Velho Oeste dos Estados Unidos. Suas histórias podem apresentar cidades de fronteira, grandes paisagens, viagens, conflitos, personagens ligados à lei e criminosos. Além da aventura, o faroeste costuma explorar questões como justiça, liberdade, sobrevivência e conflitos entre diferentes grupos. Embora seja tradicionalmente associado a um período histórico específico, suas características também podem ser utilizadas em histórias ambientadas em outros lugares e épocas." },
+                { nome: "Faroeste", 
+                    detalhe: "O faroeste, também conhecido como western, é um gênero tradicionalmente relacionado ao Velho Oeste dos Estados Unidos. Suas histórias podem apresentar cidades de fronteira, grandes paisagens, viagens, conflitos, personagens ligados à lei e criminosos. Além da aventura, o faroeste costuma explorar questões como justiça, liberdade, sobrevivência e conflitos entre diferentes grupos. Embora seja tradicionalmente associado a um período histórico específico, suas características também podem ser utilizadas em histórias ambientadas em outros lugares e épocas.",
+                imagens: ["/images/yellowstone.webp", "/images/imperdoaveis.jpg", "/images/djangoLivre.jpg"]
+             },
 
-                { nome: "Crime", detalhe: "O gênero crime concentra-se em acontecimentos relacionados a crimes e nas pessoas envolvidas neles. A história pode acompanhar investigadores tentando descobrir o responsável por um crime, criminosos planejando suas ações ou pessoas tentando descobrir a verdade. Esse gênero frequentemente se mistura com mistério, suspense, ação e drama. As histórias de crime podem explorar questões relacionadas à justiça, à moralidade, às consequências das escolhas e às relações entre criminosos e investigadores." }
+                { nome: "Crime", 
+                    detalhe: "O gênero crime concentra-se em acontecimentos relacionados a crimes e nas pessoas envolvidas neles. A história pode acompanhar investigadores tentando descobrir o responsável por um crime, criminosos planejando suas ações ou pessoas tentando descobrir a verdade. Esse gênero frequentemente se mistura com mistério, suspense, ação e drama. As histórias de crime podem explorar questões relacionadas à justiça, à moralidade, às consequências das escolhas e às relações entre criminosos e investigadores.",
+                imagens: ["/images/imperdoaveis.jpg", "/images/BB.webp", "/images/chefão.jpg"]
+             }
             ]
         },
         temas: {
