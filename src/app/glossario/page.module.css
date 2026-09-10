@@ -1,0 +1,153 @@
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 16px;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #ffdd54;    
+}
+
+.tableWrapper {
+    width: 100%;
+    border-radius: 12px;
+    background-color: #0f0f0f;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.table th {
+    background-color: #3e050d;
+    color: #ffffff;
+    padding: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #58111a;
+}
+
+.thCenter {
+    text-align: center;
+}
+
+.table td {
+    padding: 20px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    line-height: 1.6;
+    color: #e0e0e0;
+    vertical-align: middle;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nomePremio {
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    width: 20%;
+}
+
+.explicacaoCell {
+    width: 60%;
+}
+
+.trofeuCell {
+    text-align: center;
+    width: 20%;
+}
+
+.imageWrapper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 8px;
+    border-radius: 8px;
+    width: 120px;
+    height: 120px;
+}
+
+.trofeuImage {
+    width: 110%;
+    height: 110%;
+    object-fit: contain;
+}
+
+/*===============================Responsividade mobile================================*/
+@media (max-width: 600px) {
+    .table thead {
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .table tr {
+        padding: 24px 16px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .table tbody tr:nth-child(even) {
+        background-color: transparent;
+    }
+
+    .nomePremio {
+        font-size: 25px;
+        margin-bottom: 12px;
+        color: #ffcc00;
+        padding: 0;
+        border: none;
+    }
+
+    .explicacaoCell {
+        font-size: 0.95rem;
+        color: #e0e0e0;
+        margin-bottom: 20px;
+        padding: 0;
+        border: none;
+        text-align: justify;
+        line-height: 1.6;
+    }
+
+    .trofeuCell {
+        padding: 0;
+        border: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .imageWrapper {
+        width: 130px;
+        height: 130px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}

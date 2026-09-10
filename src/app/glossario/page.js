@@ -60,69 +60,94 @@ export default function profissoes() {
         },
         {
             id: 12,
-            nome: "Técnico de som",
-            explicacao: "Responsável por captar todos os áudios e diálogos dos atores no set com a maior clareza possível, utilizando microfones e gravadores específicos.",
+            nome: "Easter egg",
+            explicacao: "Um segredo, piada interna ou referência escondida intencionalmente pelos criadores dentro do filme para que os fãs mais atentos encontrem.",
         },
         {
             id: 13,
-            nome: "Maquiador",
-            explicacao: "Aplica a maquiagem nos atores, que pode ir desde uma correção simples para a câmera até ferimentos falsos e efeitos especiais de caracterização.",
+            nome: "MacGuffin",
+            explicacao: "Um objeto, mistério ou objetivo que serve puramente para fazer a história andar e motivar as ações dos personagens, mesmo que sua natureza exata não importe tanto.",
         },
         {
             id: 14,
-            nome: "Cabeleleiro",
-            explicacao: "Cuida dos penteados, cortes e perucas dos atores para garantir o visual correto e a continuidade visual ao longo de todas as cenas.",
+            nome: "Montagem",
+            explicacao: "O processo técnico de selecionar, cortar e juntar os takes gravados para construir o ritmo, o tempo e o significado visual da narrativa.",
         },
         {
             id: 15,
-            nome: "Continuísta",
-            explicacao: " A pessoa que garante que não haja erros de lógica entre os cortes (como um copo que estava cheio em um take e aparece vazio no take seguinte).",
+            nome: "VFX (Efeitos Visuais)",
+            explicacao: "Alterações ou criações de imagens feitas digitalmente em computadores após as gravações no set (como criaturas digitais).",
         },
         {
             id: 16,
-            nome: "Cenógrafo",
-            explicacao: "O profissional que desenha, constrói e decora fisicamente os cenários onde o filme será gravado.",
+            nome: "SFX (Efeitos Especiais)",
+            explicacao: "Truques físicos e práticos realizados ao vivo durante as gravações no set (como explosões reais, fumaça ou próteses mecânicas).",
         },
         {
             id: 17,
-            nome: "Eletricista de cinema",
-            explicacao: "Instala e opera toda a rede de energia e os pesados equipamentos de iluminação necessários para dar luz às cenas criadas pela fotografia.",
+            nome: "ADR (Substituição Automatizada de Diálogo)",
+            explicacao: "O processo de dublagem feito pelos próprios atores em estúdio após as gravações para corrigir áudios ruins captados no set.",
         },
         {
             id: 18,
-            nome: "Editor/montador",
-            explicacao: "Quem junta os pedaços de vídeo gravados. Ele escolhe as melhores tomadas e as organiza na ordem certa para dar ritmo e sentido à história.",
+            nome: "Plano geral",
+            explicacao: "Um enquadramento aberto que mostra o cenário inteiro ao fundo, situando o espectador no espaço e fazendo o personagem parecer pequeno no ambiente.",
         },
         {
             id: 19,
-            nome: "Designer de som",
-            explicacao: "Cria a atmosfera sonora do filme. É quem escolhe ou grava os efeitos sonoros (como passos, explosões ou o vento) para dar realismo às cenas.",
+            nome: "Plano médio",
+            explicacao: "Enquadra o ator da cintura para cima, ideal para mostrar a interação física e o diálogo natural entre os personagens.",
         },
         {
             id: 20,
-            nome: "Mixador",
-            explicacao: "O técnico que equilibra os volumes de tudo o que ouvimos: junta as vozes dos atores, os efeitos sonoros e a música de forma que nenhum abafe o outro.",
+            nome: "Close-up",
+            explicacao: "Um corte fechado no rosto do personagem para destacar suas expressões faciais, emoções íntimas e reações diretas.",
         },
         {
             id: 21,
-            nome: "Compositor musical",
-            explicacao: "Cria a trilha sonora original do filme, compondo as músicas de fundo que ajudam a ditar a emoção e a tensão de cada cena.",
+            nome: "Primeiro plano",
+            explicacao: "Uma variação do close-up focado muito de perto em um elemento (pode ser o rosto cobrindo a tela toda ou um objeto específico de grande importância).",
         },
         {
             id: 22,
-            nome: "Artista de efeitos visuais (VFX)",
-            explicacao: "Cria ou modifica imagens digitalmente no computador para adicionar elementos que não podiam ser gravados ao vivo (como monstros, naves ou cenários digitais).",
+            nome: "Ângulo de câmera",
+            explicacao: "A posição e altura de onde a câmera filma o personagem (como filmar de baixo para cima para dar poder, ou de cima para baixo para dar fragilidade).",
         },
         {
             id: 23,
-            nome: "Colorista",
-            explicacao: "O profissional que faz o tratamento de cor do filme finalizado, ajustando os tons, contrastes e saturação para dar a identidade visual e o clima desejado à obra.",
+            nome: "Movimento de câmera",
+            explicacao: "A ação física da câmera se deslocando no espaço (como o Pan, girando para os lados, ou o Tilt, movendo-se para cima e para baixo).",
+        },
+        {
+            id: 24,
+            nome: "Iluminação",
+            explicacao: "O uso estratégico de luzes e sombras para criar a atmosfera do filme, direcionar a atenção do público e ressaltar o clima dramático.",
+        },
+        {
+            id: 25,
+            nome: "Composição",
+            explicacao: "A organização visual e o arranjo de todos os elementos (personagens, objetos, cenários) dentro do quadro da tela.",
+        },
+        {
+            id: 26,
+            nome: "Profundidade de campo",
+            explicacao: "A distância que determina o que fica nítido e o que fica borrado na imagem, separando o personagem principal do fundo da cena.",
+        },
+        {
+            id: 27,
+            nome: "Trilha sonora",
+            explicacao: "O conjunto de músicas e temas instrumentais que acompanham o filme para guiar as emoções, gerar tensão ou provocar choro.",
+        },
+        {
+            id: 28,
+            nome: "Design de som",
+            explicacao: "A criação e manipulação minuciosa de toda a identidade sonora do filme, incluindo ruídos de ambiente, passos e efeitos sonoros realistas.",
         }
     ];
 
     return (
         <main className={styles.container}>
-            <h1 className={styles.title}>As Profissões do Cinema</h1>
+            <h1 className={styles.title}>Glossário do mundo do Cinema</h1>
 
             <div className={styles.tableWrapper}>
                 <table className={styles.table}>

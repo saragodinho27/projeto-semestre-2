@@ -58,7 +58,7 @@
 
 /* Painel de Conteúdo (Grade superior) */
 .contentPanel {
-    background: #1f1f23;
+    background: #17171b;
     border-radius: 16px;
     padding: 30px;
     margin-bottom: 50px;
@@ -203,7 +203,7 @@
     transform: scale(1.05);
 }
 
-/*=============================Responsividade Mobile==============================*/
+/*===============================Responsividade mobile================================*/
 @media (max-width: 600px) {
     .tabsMenu {
         flex-direction: column;

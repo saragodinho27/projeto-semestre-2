@@ -6,7 +6,6 @@ import { useState } from 'react';
 import { ChevronRight, Film, Trophy, Briefcase, Home } from 'lucide-react';
 
 export default function Header() {
-    // Estado para controlar se o menu mobile está aberto ou fechado
     const [menu, setMenu] = useState('☰');
 
     const navItems = [
@@ -29,7 +28,6 @@ export default function Header() {
                 />
             </div>
 
-            {/* Botão de hambúrguer (visível apenas no mobile via CSS) */}
             <button
                 className={styles.dropbtn}
                 onClick={() => setMenu(menu === '☰' ? '✕' : '☰')}

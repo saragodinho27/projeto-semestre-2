@@ -93,7 +93,7 @@
     object-fit: contain;
 }
 
-/* ============RESPONSIVIDADE (MOBILE) - EMPILHAMENTO VERTICAL PERFECT================================== */
+/*===============================Responsividade mobile================================*/
 @media (max-width: 600px) {
     .table thead {
         display: none;
