@@ -69,7 +69,6 @@ export default function Premiacoes() {
     return (
         <main className={styles.container}>
             <h1 className={styles.title}>Principais Premiações do Cinema</h1>
-            <p className={styles.subtitle}>Conheça os prêmios mais cobiçados da indústria audiovisual e o que cada um representa.</p>
 
             <div className={styles.tableWrapper}>
                 <table className={styles.table}>
