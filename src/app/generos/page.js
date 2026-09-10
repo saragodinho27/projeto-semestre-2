@@ -233,9 +233,6 @@ export default function Generos() {
         <main className={styles.container}>
             <header className={styles.header}>
                 <h1 className={styles.title}>Gêneros, Temas e Estilos</h1>
-                <p className={styles.subtitle}>
-                    Muitas pessoas misturam esses conceitos, mas eles <strong>não são</strong> a mesma coisa. Escolha uma categoria para explorar.
-                </p>
             </header>
 
             <nav className={styles.tabsMenu}>
