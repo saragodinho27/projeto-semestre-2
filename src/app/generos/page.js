@@ -199,25 +199,25 @@ export default function Generos() {
                 {
                     nome: "Experimental",
                     detalhe: "O estilo experimental procura explorar maneiras diferentes de contar uma história. O filme pode brincar com a montagem, o som, a câmera, o tempo, os diálogos ou a estrutura narrativa. Em vez de seguir sempre o modelo tradicional de começo, desenvolvimento e final, a obra pode experimentar novas formas de apresentar acontecimentos e personagens. A intenção é explorar possibilidades diferentes de linguagem cinematográfica.",
-                    imagens: ["/images", "/images", "/images"]
+                    imagens: ["/images3/devs.webp", "/images3/peaks.jpg", "/images3/oldYoung.jpg"]
                 },
 
                 {
                     nome: "Satírico",
                     detalhe: "O estilo satírico utiliza humor, exagero, ironia ou situações absurdas para criticar comportamentos, pessoas, instituições ou problemas da sociedade. Uma obra satírica pode parecer engraçada na superfície, mas apresentar uma crítica por trás do humor. Dessa maneira, o público pode rir e, ao mesmo tempo, perceber que a história está fazendo uma reflexão sobre determinado problema.",
-                    imagens: ["/images3/southPark.jpg", "/images3/deadpool.jpg", "/images"]
+                    imagens: ["/images3/southPark.jpg", "/images3/deadpool.jpg", "/images3/boys.jpg"]
                 },
 
                 {
                     nome: "Psicológico",
                     detalhe: "O estilo psicológico concentra-se principalmente na mente e na experiência interna dos personagens. A narrativa pode mostrar pensamentos, sentimentos, lembranças, medos, dúvidas e conflitos internos. Em algumas histórias, entender o que o personagem pensa é tão importante quanto entender os acontecimentos externos. Esse estilo pode fazer o público questionar o que é realidade, memória ou percepção.",
-                    imagens: ["/images3/operario.jpg", "/images", "/images"]
+                    imagens: ["/images3/operario.jpg", "/images3/hannibal.jpg", "/images3/coringa.jpg"]
                 },
 
                 {
                     nome: "Distópico",
                     detalhe: "O estilo distópico apresenta uma sociedade que possui características negativas, como controle excessivo, desigualdade, falta de liberdade, vigilância ou governos autoritários. A história pode mostrar personagens vivendo dentro desse sistema e tentando compreender ou enfrentar suas regras. Muitas obras distópicas também fazem críticas à sociedade atual, imaginando o que poderia acontecer se determinados problemas fossem levados a extremos.",
-                    imagens: ["/images3/1984.jpg", "/images", "/images"]
+                    imagens: ["/images3/1984.jpg", "/images3/matrix.jpg", "/images3/amanhã.jpg"]
                 },
 
                 {
