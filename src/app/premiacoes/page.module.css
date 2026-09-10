@@ -8,10 +8,10 @@
 
 .title {
     text-align: center;
-    font-size: 2.2rem;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 800;
     margin-bottom: 10px;
-    color: #ffdd54;
+    color: #ffdd54;    
 }
 
 .subtitle {
@@ -101,8 +101,7 @@
 }
 
 /* ============RESPONSIVIDADE (MOBILE) - EMPILHAMENTO VERTICAL PERFECT================================== */
-
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .table thead {
         display: none;
     }

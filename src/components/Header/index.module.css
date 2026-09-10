@@ -1,6 +1,6 @@
 .header {
     background: #3e050d;
-    background: radial-gradient(circle,#58111A 0%, #3e050d 100%);
+    background: radial-gradient(circle,#810f1e 0%, #3e050d 100%);
     padding: 24px 20px;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,6 @@
     gap: 3px;
 }
 
-/* Estilo da Logo */
 .logoContainer {
     display: flex;
     justify-content: center;
@@ -19,12 +18,11 @@
     object-fit: contain;
 }
 
-/* Estilo do Menu */
 .cabecario {
     width: 100%;
     display: flex;
     justify-content: center;
-    overflow-x: auto; /* Garante rolagem em telas pequenas sem quebrar */
+    overflow-x: auto;
 }
 
 .ulCabecario {
@@ -40,11 +38,11 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    background-color: #3d0712;
+    background-color: #4e0b18;
     color: #ffffff;
     padding: 12px 24px;
     border-radius: 99px;
-    border: 1px solid #661021;
+    border: 1px solid #8b0b27;
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
@@ -66,4 +64,99 @@
 .chevron {
     color: #a0aec0;
     margin-left: 4px;
+}
+
+/* --- Estilos base para o botão de hambúrguer --- */
+.dropbtn {
+    display: none; /* Escondido no Desktop */
+    background: none;
+    border: none;
+    color: white; 
+    font-size: 2.2rem; /* Aumentado um pouco para dar melhor clique */
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    
+    .header {
+        position: relative; 
+        display: flex;
+        justify-content: center; /* Centraliza a logo no mobile, se preferir */
+        align-items: center;
+        padding: 15px;
+        min-height: 85px;
+    }
+
+    /* Fixa o botão estritamente na ESQUERDA da tela */
+    .dropbtn {
+        display: block !important; /* O !important garante que ele ignore outras regras globais */
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%); /* Centraliza verticalmente no topo */
+        z-index: 1002; /* Fica por cima de qualquer elemento */
+    }
+
+    /* O Menu continua vindo da DIREITA da tela */
+    .cabecario {
+        position: fixed !important;
+        top: 0;
+        right: -100% !important; /* Começa totalmente escondido na DIREITA */
+        width: 260px;  
+        height: 100vh;
+        background-color: #3e050d; /* Um tom escuro padrão */
+        padding-top: 100px; 
+        transition: right 0.4s ease-in-out !important; /* Força a animação de deslizar */
+        z-index: 1000;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Classe ativada no clique do botão */
+    .cabecario.menuAberto {
+        right: 0 !important; /* Empurra o menu para dentro da tela pela direita */
+    }
+
+    .ulCabecario {
+        display: flex;
+        flex-direction: column; 
+        gap: 25px;
+        padding: 0 25px;
+        list-style: none;
+    }
+
+    .navButton {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start; 
+        align-items: center;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+/* --- Resolução intermediária onde os botões devem se empilhar --- */
+@media (min-width: 601px) and (max-width: 1047px) {
+    
+    .cabecario {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .ulCabecario {
+        display: flex;
+        flex-direction: row; /* Mantém na horizontal inicialmente */
+        flex-wrap: wrap;     /* PERMITE QUE OS BOTÕES QUEBREM LINHA (EMPILHEM) */
+        justify-content: center;
+        gap: 15px 10px;      /* Espaçamento vertical (15px) e horizontal (10px) entre botões empilhados */
+        max-width: 90%;      /* Evita que cole nas bordas da tela */
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+    }
+
+    .navButton {
+        white-space: nowrap; /* Impede que o texto de um único botão quebre em duas linhas */
+    }
 }

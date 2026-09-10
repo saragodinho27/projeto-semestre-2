@@ -2,9 +2,13 @@
 import Link from 'next/link';
 import Image from "next/image";
 import styles from './index.module.css';
+import { useState } from 'react';
 import { ChevronRight, Film, Trophy, Briefcase, Home } from 'lucide-react';
 
 export default function Header() {
+    // Estado para controlar se o menu mobile está aberto ou fechado
+    const [menu, setMenu] = useState('☰');
+
     const navItems = [
         { label: 'Home', href: '/', icon: Home },
         { label: 'Gêneros', href: '/generos', icon: Film },
@@ -16,16 +20,24 @@ export default function Header() {
     return (
         <header className={styles.header}>
             <div className={styles.logoContainer}>
-                    <Image 
-                        src="/images/logoCinema.png" 
-                        alt="Logo Cinema"
-                        width={200}
-                        height={85}
-                        priority
-                    />
+                <Image
+                    src="/images/logoCinema.png"
+                    alt="Logo Cinema"
+                    width={200}
+                    height={85}
+                    priority
+                />
             </div>
 
-            <nav className={styles.cabecario}>
+            {/* Botão de hambúrguer (visível apenas no mobile via CSS) */}
+            <button
+                className={styles.dropbtn}
+                onClick={() => setMenu(menu === '☰' ? '✕' : '☰')}
+            >
+                {menu}
+            </button>
+
+            <nav className={`${styles.cabecario} ${menu === '✕' ? styles.menuAberto : ''}`}>
                 <ul className={styles.ulCabecario}>
                     {navItems.map((item) => {
                         const Icon = item.icon;
