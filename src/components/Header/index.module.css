@@ -66,13 +66,12 @@
     margin-left: 4px;
 }
 
-/* --- Estilos base para o botão de hambúrguer --- */
 .dropbtn {
-    display: none; /* Escondido no Desktop */
+    display: none;
     background: none;
     border: none;
     color: white; 
-    font-size: 2.2rem; /* Aumentado um pouco para dar melhor clique */
+    font-size: 2.2rem;
     cursor: pointer;
 }
 
@@ -81,39 +80,36 @@
     .header {
         position: relative; 
         display: flex;
-        justify-content: center; /* Centraliza a logo no mobile, se preferir */
+        justify-content: center;
         align-items: center;
         padding: 15px;
         min-height: 85px;
     }
 
-    /* Fixa o botão estritamente na ESQUERDA da tela */
     .dropbtn {
-        display: block !important; /* O !important garante que ele ignore outras regras globais */
+        display: block !important;
         position: absolute;
         left: 20px;
         top: 50%;
-        transform: translateY(-50%); /* Centraliza verticalmente no topo */
-        z-index: 1002; /* Fica por cima de qualquer elemento */
+        transform: translateY(-50%);
+        z-index: 1002;
     }
 
-    /* O Menu continua vindo da DIREITA da tela */
     .cabecario {
         position: fixed !important;
         top: 0;
-        right: -100% !important; /* Começa totalmente escondido na DIREITA */
+        right: -100% !important;
         width: 260px;  
         height: 100vh;
-        background-color: #3e050d; /* Um tom escuro padrão */
+        background-color: #3e050d;
         padding-top: 100px; 
-        transition: right 0.4s ease-in-out !important; /* Força a animação de deslizar */
+        transition: right 0.4s ease-in-out !important;
         z-index: 1000;
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.7);
     }
 
-    /* Classe ativada no clique do botão */
     .cabecario.menuAberto {
-        right: 0 !important; /* Empurra o menu para dentro da tela pela direita */
+        right: 0 !important;
     }
 
     .ulCabecario {
@@ -134,7 +130,6 @@
     }
 }
 
-/* --- Resolução intermediária onde os botões devem se empilhar --- */
 @media (min-width: 601px) and (max-width: 1047px) {
     
     .cabecario {
@@ -146,17 +141,17 @@
 
     .ulCabecario {
         display: flex;
-        flex-direction: row; /* Mantém na horizontal inicialmente */
-        flex-wrap: wrap;     /* PERMITE QUE OS BOTÕES QUEBREM LINHA (EMPILHEM) */
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 15px 10px;      /* Espaçamento vertical (15px) e horizontal (10px) entre botões empilhados */
-        max-width: 90%;      /* Evita que cole nas bordas da tela */
+        gap: 15px 10px;
+        max-width: 90%;
         margin: 0 auto;
         padding: 0;
         list-style: none;
     }
 
     .navButton {
-        white-space: nowrap; /* Impede que o texto de um único botão quebre em duas linhas */
+        white-space: nowrap;
     }
 }
