@@ -63,7 +63,7 @@ export default function Generos() {
                 {
                     nome: "Suspense",
                     detalhe: "O suspense é um gênero que procura manter o público em estado de expectativa e tensão. Normalmente existe algum perigo, segredo, ameaça ou problema que ainda não foi resolvido. A história apresenta informações aos poucos, fazendo com que o público queira descobrir o que acontecerá em seguida. O suspense pode aparecer em histórias de ação, terror, crime ou mistério. Sua principal característica é criar a sensação de que algo importante está prestes a acontecer.",
-                    imagens: ["/images/garotaExemplar.webp", "/images/ilhaDoMedo.jpg", "/images/you.jpg"]
+                    imagens: ["/images/supernatural.jpg", "/images/ilhaDoMedo.jpg", "/images/you.jpg"]
                 },
 
                 {
