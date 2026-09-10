@@ -5,7 +5,7 @@
     padding: 20px 16px 40px;
     color: #ffffff;
     font-family: system-ui, -apple-system, sans-serif;
-    box-sizing: border-box; /* Impede que o padding quebre a largura total */
+    box-sizing: border-box;
 }
 
 .sectionTitle {
@@ -13,9 +13,9 @@
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 20px;
+    color: #ffdd54;
 }
 
-/* Banner Principal */
 .heroBanner {
     position: relative;
     width: 100%;

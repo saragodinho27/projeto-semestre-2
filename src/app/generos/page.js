@@ -81,7 +81,7 @@ export default function Generos() {
                 {
                     nome: "Animação",
                     detalhe: "A animação é uma forma de produção audiovisual em que o movimento é criado por meio de imagens produzidas ou manipuladas para dar a impressão de movimento. Ela pode utilizar desenhos, imagens digitais, modelos tridimensionais ou técnicas como stop motion. A animação não determina necessariamente o tipo de história, pois pode apresentar comédia, ação, drama, aventura, fantasia ou ficção científica. Por isso, uma animação pode abordar praticamente qualquer gênero ou tema.",
-                    imagens: ["/images/toyStory.jpg", "/images/aranhaVerso.jpg", "/images/pony.jpg"]
+                    imagens: ["/images/toyStory.jpg", "/images/aranhaVerso.jpg", "/images/robo.jpg"]
                 },
 
                 {
@@ -113,46 +113,118 @@ export default function Generos() {
             titulo: "Temas",
             descricao: "O coração emocional e a mensagem profunda da obra. É sobre o que o filme realmente fala por trás da ação.",
             itens: [
-                { nome: "Amizade", detalhe: "O tema da amizade aborda a relação entre pessoas que desenvolvem confiança, companheirismo e consideração umas pelas outras. Uma história sobre amizade pode mostrar personagens que enfrentam dificuldades juntos, aprendem a confiar uns nos outros ou precisam resolver conflitos que ameaçam sua relação. A amizade pode ser especialmente importante em histórias de aventura, nas quais os personagens dependem uns dos outros para superar desafios." },
+                {
+                    nome: "Amizade",
+                    detalhe: "O tema da amizade aborda a relação entre pessoas que desenvolvem confiança, companheirismo e consideração umas pelas outras. Uma história sobre amizade pode mostrar personagens que enfrentam dificuldades juntos, aprendem a confiar uns nos outros ou precisam resolver conflitos que ameaçam sua relação. A amizade pode ser especialmente importante em histórias de aventura, nas quais os personagens dependem uns dos outros para superar desafios.",
+                    imagens: ["/images2/pony.jpg", "/images2/invisivel.jpg", "/images2/goonies.jpg"]
+                },
 
-                { nome: "Vingança", detalhe: "A vingança é um tema relacionado ao desejo de uma pessoa de fazer alguém pagar por uma ação que considera injusta ou prejudicial. Uma história com esse tema pode acompanhar um personagem que passa a buscar uma forma de retribuir aquilo que sofreu. A narrativa também pode mostrar as consequências dessa decisão e questionar se a vingança realmente traz justiça ou apenas cria novos conflitos." },
+                {
+                    nome: "Vingança",
+                    detalhe: "A vingança é um tema relacionado ao desejo de uma pessoa de fazer alguém pagar por uma ação que considera injusta ou prejudicial. Uma história com esse tema pode acompanhar um personagem que passa a buscar uma forma de retribuir aquilo que sofreu. A narrativa também pode mostrar as consequências dessa decisão e questionar se a vingança realmente traz justiça ou apenas cria novos conflitos.",
+                    imagens: ["/images2/corvo.jpg", "/images2/gladiador.webp", "/images2/mentalista.jpg"]
+                },
 
-                { nome: "Família", detalhe: "O tema da família aborda as relações entre familiares e os sentimentos, conflitos e responsabilidades existentes entre eles. Pode mostrar pais e filhos, irmãos, avós ou outros membros da família enfrentando dificuldades juntos. Uma história pode explorar proteção, confiança, conflitos, separações, reconciliações e mudanças dentro da família. Esse tema pode aparecer em praticamente qualquer gênero." },
+                {
+                    nome: "Família",
+                    detalhe: "O tema da família aborda as relações entre familiares e os sentimentos, conflitos e responsabilidades existentes entre eles. Pode mostrar pais e filhos, irmãos, avós ou outros membros da família enfrentando dificuldades juntos. Uma história pode explorar proteção, confiança, conflitos, separações, reconciliações e mudanças dentro da família. Esse tema pode aparecer em praticamente qualquer gênero.",
+                    imagens: ["/images2/missShunshine.jpg", "/images2/doze.jpg", "/images2/viva.jpg"]
+                },
 
-                { nome: "Amor", detalhe: "O amor é um tema amplo que pode aparecer de diversas maneiras. Pode representar o amor entre familiares, amigos ou pessoas que possuem um relacionamento romântico. Uma história pode mostrar como o amor influencia as decisões dos personagens, faz com que eles enfrentem dificuldades ou fortalece suas relações. Por ser um tema muito amplo, ele pode aparecer em histórias de drama, aventura, fantasia, ação e muitos outros gêneros." },
+                {
+                    nome: "Amor",
+                    detalhe: "O amor é um tema amplo que pode aparecer de diversas maneiras. Pode representar o amor entre familiares, amigos ou pessoas que possuem um relacionamento romântico. Uma história pode mostrar como o amor influencia as decisões dos personagens, faz com que eles enfrentem dificuldades ou fortalece suas relações. Por ser um tema muito amplo, ele pode aparecer em histórias de drama, aventura, fantasia, ação e muitos outros gêneros.",
+                    imagens: ["/images2/seuNome.jpg", "/images2/cores.png", "/images2/culpaEstrelas.jpg"]
+                },
 
-                { nome: "Guerra", detalhe: "O tema da guerra aborda conflitos entre grupos, povos, sociedades ou países. Uma história pode mostrar os acontecimentos de uma guerra, mas também pode concentrar-se nas consequências que ela causa na vida das pessoas. Pode explorar coragem, sobrevivência, família, amizade, poder, justiça e decisões difíceis. O tema pode aparecer tanto em histórias baseadas em acontecimentos históricos quanto em mundos fictícios." },
+                {
+                    nome: "Guerra",
+                    detalhe: "O tema da guerra aborda conflitos entre grupos, povos, sociedades ou países. Uma história pode mostrar os acontecimentos de uma guerra, mas também pode concentrar-se nas consequências que ela causa na vida das pessoas. Pode explorar coragem, sobrevivência, família, amizade, poder, justiça e decisões difíceis. O tema pode aparecer tanto em histórias baseadas em acontecimentos históricos quanto em mundos fictícios.",
+                    imagens: ["/images2/odisseia.jpg", "/images2/pianista.jpg", "/images2/coraçõesFerro.jpg"]
+                },
 
-                { nome: "Poder", detalhe: "O tema do poder explora a capacidade de uma pessoa ou grupo controlar, influenciar ou tomar decisões que afetam outras pessoas. Pode envolver governos, líderes, riqueza, autoridade, tecnologia ou influência social. Muitas histórias utilizam esse tema para questionar o que acontece quando alguém possui poder demais e como esse poder pode ser utilizado de maneira positiva ou negativa." },
+                {
+                    nome: "Poder",
+                    detalhe: "O tema do poder explora a capacidade de uma pessoa ou grupo controlar, influenciar ou tomar decisões que afetam outras pessoas. Pode envolver governos, líderes, riqueza, autoridade, tecnologia ou influência social. Muitas histórias utilizam esse tema para questionar o que acontece quando alguém possui poder demais e como esse poder pode ser utilizado de maneira positiva ou negativa.",
+                    imagens: ["/images2/houseOfCards.jpg", "/images2/loboWall.jpg", "/images2/reiEscócia.jpg"]
+                },
 
-                { nome: "Sobrevivência", detalhe: "O tema da sobrevivência aparece quando os personagens precisam enfrentar condições difíceis para permanecer seguros ou continuar vivendo. Eles podem estar isolados, enfrentar um ambiente perigoso, passar por um desastre ou ter poucos recursos disponíveis. A sobrevivência pode testar a coragem, inteligência, resistência e capacidade de tomar decisões dos personagens. Esse tema é muito comum em histórias de aventura, ação, terror e ficção científica." },
+                {
+                    nome: "Sobrevivência",
+                    detalhe: "O tema da sobrevivência aparece quando os personagens precisam enfrentar condições difíceis para permanecer seguros ou continuar vivendo. Eles podem estar isolados, enfrentar um ambiente perigoso, passar por um desastre ou ter poucos recursos disponíveis. A sobrevivência pode testar a coragem, inteligência, resistência e capacidade de tomar decisões dos personagens. Esse tema é muito comum em histórias de aventura, ação, terror e ficção científica.",
+                    imagens: ["/images2/horas.jpg", "/images2/round6.jpg", "/images2/jogosVorazes.webp"]
+                },
 
-                { nome: "Crescimento pessoal", detalhe: "O crescimento pessoal mostra a transformação de um personagem durante a história. No início, ele pode possuir determinadas características, medos ou dificuldades, mas os acontecimentos fazem com que ele aprenda e amadureça. Esse crescimento pode envolver aprender com os próprios erros, assumir responsabilidades, enfrentar dificuldades ou compreender melhor outras pessoas. O foco está na mudança interior do personagem." },
+                {
+                    nome: "Crescimento pessoal",
+                    detalhe: "O crescimento pessoal mostra a transformação de um personagem durante a história. No início, ele pode possuir determinadas características, medos ou dificuldades, mas os acontecimentos fazem com que ele aprenda e amadureça. Esse crescimento pode envolver aprender com os próprios erros, assumir responsabilidades, enfrentar dificuldades ou compreender melhor outras pessoas. O foco está na mudança interior do personagem.",
+                    imagens: ["/images2/soul.jpg", "/images2/karateKid.jpg", "/images2/walterMitty.jpg"]
+                },
 
-                { nome: "Justiça", detalhe: "O tema da justiça explora questões relacionadas ao certo e ao errado e à maneira como as pessoas devem ser tratadas quando cometem determinadas ações. Uma história pode apresentar personagens tentando corrigir uma injustiça, descobrir a verdade ou responsabilizar alguém por suas ações. Também pode questionar se as leis são sempre justas e se existe diferença entre justiça e vingança." },
+                {
+                    nome: "Justiça",
+                    detalhe: "O tema da justiça explora questões relacionadas ao certo e ao errado e à maneira como as pessoas devem ser tratadas quando cometem determinadas ações. Uma história pode apresentar personagens tentando corrigir uma injustiça, descobrir a verdade ou responsabilizar alguém por suas ações. Também pode questionar se as leis são sempre justas e se existe diferença entre justiça e vingança.",
+                    imagens: ["/images2/juri.jpg", "/images2/solTodos.jpg", "/images2/richard.jpg"]
+                },
 
-                { nome: "Identidade", detalhe: "A identidade está relacionada à descoberta de quem uma pessoa é e de como ela entende a si mesma. Uma história com esse tema pode mostrar personagens descobrindo seu passado, suas origens, suas características ou seu lugar no mundo. Também pode apresentar mudanças na maneira como o personagem se enxerga. Por isso, o tema da identidade costuma estar ligado ao autoconhecimento e ao crescimento pessoal." },
+                {
+                    nome: "Identidade",
+                    detalhe: "A identidade está relacionada à descoberta de quem uma pessoa é e de como ela entende a si mesma. Uma história com esse tema pode mostrar personagens descobrindo seu passado, suas origens, suas características ou seu lugar no mundo. Também pode apresentar mudanças na maneira como o personagem se enxerga. Por isso, o tema da identidade costuma estar ligado ao autoconhecimento e ao crescimento pessoal.",
+                    imagens: ["/images2/moonlight.jpg", "/images2/truman.jpg", "/images2/luta.jpg"]
+                },
 
-                { nome: "Liberdade", detalhe: "O tema da liberdade aborda o desejo de poder tomar as próprias decisões e viver sem controle ou opressão injusta. Pode aparecer em histórias nas quais personagens vivem sob governos autoritários, regras excessivas ou situações que limitam suas escolhas. A história pode mostrar personagens tentando conquistar sua liberdade ou discutir até onde uma pessoa deve estar disposta a ir para consegui-la." }
+                {
+                    nome: "Liberdade",
+                    detalhe: "O tema da liberdade aborda o desejo de poder tomar as próprias decisões e viver sem controle ou opressão injusta. Pode aparecer em histórias nas quais personagens vivem sob governos autoritários, regras excessivas ou situações que limitam suas escolhas. A história pode mostrar personagens tentando conquistar sua liberdade ou discutir até onde uma pessoa deve estar disposta a ir para consegui-la.",
+                    imagens: ["/images2/liberdade.jpg", "/images2/fantastico.jpg", "/images2/bela.jpg"]
+                }
             ]
         },
         estilos: {
             titulo: "Estilos / Abordagens",
             descricao: "A identidade visual e a estética do diretor. Define a forma como a história é apresentada na tela.",
             itens: [
-                { nome: "Realista", detalhe: "O estilo realista procura representar situações, personagens e ambientes de maneira próxima da realidade. Os acontecimentos são geralmente plausíveis e os personagens possuem comportamentos e problemas que poderiam existir no mundo real. Uma história não precisa ser baseada em acontecimentos reais para ser realista. Ela apenas precisa apresentar um universo que siga uma lógica semelhante à nossa realidade." },
+                {
+                    nome: "Realista",
+                    detalhe: "O estilo realista procura representar situações, personagens e ambientes de maneira próxima da realidade. Os acontecimentos são geralmente plausíveis e os personagens possuem comportamentos e problemas que poderiam existir no mundo real. Uma história não precisa ser baseada em acontecimentos reais para ser realista. Ela apenas precisa apresentar um universo que siga uma lógica semelhante à nossa realidade.",
+                    imagens: ["/images3/aindaEstouAqui.jpg", "/images3/beiraMar.jpg", "/images3/brasil.jpg"]
+                },
 
-                { nome: "Surrealista", detalhe: "O estilo surrealista mistura elementos reais com situações estranhas, impossíveis ou aparentemente sem lógica. Pode apresentar sonhos, transformações, acontecimentos absurdos e imagens simbólicas. Muitas vezes, o objetivo não é explicar tudo de maneira lógica, mas transmitir sentimentos, ideias ou significados. O espectador pode precisar interpretar o que determinados acontecimentos representam." },
+                {
+                    nome: "Surrealista",
+                    detalhe: "O estilo surrealista mistura elementos reais com situações estranhas, impossíveis ou aparentemente sem lógica. Pode apresentar sonhos, transformações, acontecimentos absurdos e imagens simbólicas. Muitas vezes, o objetivo não é explicar tudo de maneira lógica, mas transmitir sentimentos, ideias ou significados. O espectador pode precisar interpretar o que determinados acontecimentos representam.",
+                    imagens: ["/images3/elefante.jpg", "/images3/mononoke.jpg", "/images3/eraserhead.jpg"]
+                },
 
-                { nome: "Experimental", detalhe: "O estilo experimental procura explorar maneiras diferentes de contar uma história. O filme pode brincar com a montagem, o som, a câmera, o tempo, os diálogos ou a estrutura narrativa. Em vez de seguir sempre o modelo tradicional de começo, desenvolvimento e final, a obra pode experimentar novas formas de apresentar acontecimentos e personagens. A intenção é explorar possibilidades diferentes de linguagem cinematográfica." },
+                {
+                    nome: "Experimental",
+                    detalhe: "O estilo experimental procura explorar maneiras diferentes de contar uma história. O filme pode brincar com a montagem, o som, a câmera, o tempo, os diálogos ou a estrutura narrativa. Em vez de seguir sempre o modelo tradicional de começo, desenvolvimento e final, a obra pode experimentar novas formas de apresentar acontecimentos e personagens. A intenção é explorar possibilidades diferentes de linguagem cinematográfica.",
+                    imagens: ["/images", "/images", "/images"]
+                },
 
-                { nome: "Satírico", detalhe: "O estilo satírico utiliza humor, exagero, ironia ou situações absurdas para criticar comportamentos, pessoas, instituições ou problemas da sociedade. Uma obra satírica pode parecer engraçada na superfície, mas apresentar uma crítica por trás do humor. Dessa maneira, o público pode rir e, ao mesmo tempo, perceber que a história está fazendo uma reflexão sobre determinado problema." },
+                {
+                    nome: "Satírico",
+                    detalhe: "O estilo satírico utiliza humor, exagero, ironia ou situações absurdas para criticar comportamentos, pessoas, instituições ou problemas da sociedade. Uma obra satírica pode parecer engraçada na superfície, mas apresentar uma crítica por trás do humor. Dessa maneira, o público pode rir e, ao mesmo tempo, perceber que a história está fazendo uma reflexão sobre determinado problema.",
+                    imagens: ["/images3/southPark.jpg", "/images3/deadpool.jpg", "/images"]
+                },
 
-                { nome: "Psicológico", detalhe: "O estilo psicológico concentra-se principalmente na mente e na experiência interna dos personagens. A narrativa pode mostrar pensamentos, sentimentos, lembranças, medos, dúvidas e conflitos internos. Em algumas histórias, entender o que o personagem pensa é tão importante quanto entender os acontecimentos externos. Esse estilo pode fazer o público questionar o que é realidade, memória ou percepção." },
+                {
+                    nome: "Psicológico",
+                    detalhe: "O estilo psicológico concentra-se principalmente na mente e na experiência interna dos personagens. A narrativa pode mostrar pensamentos, sentimentos, lembranças, medos, dúvidas e conflitos internos. Em algumas histórias, entender o que o personagem pensa é tão importante quanto entender os acontecimentos externos. Esse estilo pode fazer o público questionar o que é realidade, memória ou percepção.",
+                    imagens: ["/images3/operario.jpg", "/images", "/images"]
+                },
 
-                { nome: "Distópico", detalhe: "O estilo distópico apresenta uma sociedade que possui características negativas, como controle excessivo, desigualdade, falta de liberdade, vigilância ou governos autoritários. A história pode mostrar personagens vivendo dentro desse sistema e tentando compreender ou enfrentar suas regras. Muitas obras distópicas também fazem críticas à sociedade atual, imaginando o que poderia acontecer se determinados problemas fossem levados a extremos." },
+                {
+                    nome: "Distópico",
+                    detalhe: "O estilo distópico apresenta uma sociedade que possui características negativas, como controle excessivo, desigualdade, falta de liberdade, vigilância ou governos autoritários. A história pode mostrar personagens vivendo dentro desse sistema e tentando compreender ou enfrentar suas regras. Muitas obras distópicas também fazem críticas à sociedade atual, imaginando o que poderia acontecer se determinados problemas fossem levados a extremos.",
+                    imagens: ["/images3/1984.jpg", "/images", "/images"]
+                },
 
-                { nome: "Não linear", detalhe: "O estilo não linear apresenta os acontecimentos fora da ordem cronológica. Em vez de mostrar tudo na sequência em que aconteceu, a história pode começar pelo final, voltar ao passado e depois retornar ao presente. Pode utilizar flashbacks, memórias ou acontecimentos de diferentes períodos. Essa técnica pode ser usada para criar suspense, esconder informações ou fazer o público montar a sequência dos acontecimentos por conta própria." }
+                {
+                    nome: "Não linear",
+                    detalhe: "O estilo não linear apresenta os acontecimentos fora da ordem cronológica. Em vez de mostrar tudo na sequência em que aconteceu, a história pode começar pelo final, voltar ao passado e depois retornar ao presente. Pode utilizar flashbacks, memórias ou acontecimentos de diferentes períodos. Essa técnica pode ser usada para criar suspense, esconder informações ou fazer o público montar a sequência dos acontecimentos por conta própria.",
+                    imagens: ["/images3/chegada.jpg", "/images3/oppenheimer.jpg", "/images3/benjamin.jpg"]
+                }
             ]
         }
     };
@@ -219,7 +291,7 @@ export default function Generos() {
                                                 <div key={idx} className={styles.exampleImageWrapper}>
                                                     <Image
                                                         src={imgUrl}
-                                                        alt={`Exemplo de ${item.nome}`}
+                                                        alt={'imagem'}
                                                         fill
                                                         className={styles.exampleImage}
                                                     />
