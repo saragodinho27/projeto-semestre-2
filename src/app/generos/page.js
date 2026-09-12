@@ -232,7 +232,7 @@ export default function Generos() {
     return (
         <main className={styles.container}>
             <header className={styles.header}>
-                <h1 className={styles.title}>Gêneros, Temas e Estilos</h1>
+                <h1 className={styles.title}>Gêneros, Temas e Estilos Testeeeeeeeeeeeeeeeeeee</h1>
             </header>
 
             <nav className={styles.tabsMenu}>
