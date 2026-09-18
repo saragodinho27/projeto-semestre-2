@@ -1,12 +1,11 @@
 'use client';
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import styles from "./page.module.css";
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function Home() {
-    const mainFeatured = [
+    const noticias = [
         {
             id: 1,
             title: "Conheça os atores que interpretaram a família Weasleys na nova série de Harry Potter",
@@ -43,14 +42,14 @@ export default function Home() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handlePrev = () => {
-        setCurrentIndex((prev) => (prev === 0 ? mainFeatured.length - 1 : prev - 1));
+        setCurrentIndex((prev) => (prev === 0 ? noticias.length - 1 : prev - 1));
     };
 
     const handleNext = () => {
-        setCurrentIndex((prev) => (prev === mainFeatured.length - 1 ? 0 : prev + 1));
+        setCurrentIndex((prev) => (prev === noticias.length - 1 ? 0 : prev + 1));
     };
 
-    const currentSlide = mainFeatured[currentIndex];
+    const currentSlide = noticias[currentIndex];
 
     return (
         <main className={styles.container}>
@@ -81,7 +80,7 @@ export default function Home() {
                     <p>{currentSlide.subtitle}</p>
 
                     <div className={styles.dotsContainer}>
-                        {mainFeatured.map((_, idx) => (
+                        {noticias.map((_, idx) => (
                             <span
                                 key={idx}
                                 className={`${styles.dot} ${idx === currentIndex ? styles.activeDot : ''}`}

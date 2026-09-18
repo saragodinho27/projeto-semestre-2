@@ -270,7 +270,7 @@ export default function Generos() {
             </section>
 
             <section className={styles.explanationsSection}>
-                <h3 className={styles.sectionDividerTitle}>Dicionário</h3>
+                <h3 className={styles.sectionDividerTitle}>Explicação</h3>
                 <div className={styles.explanationsList}>
                     {dados[activeTab].itens.map((item, index) => {
                         const idFormatado = `item-${item.nome.toLowerCase().replace(/\s+/g, '-')}`;
