@@ -10,10 +10,7 @@ export default function Header() {
 
     const navItems = [
         { label: 'Home', href: '/', icon: Home },
-        { label: 'Gêneros', href: '/generos', icon: Film },
-        { label: 'Premiações', href: '/premiacoes', icon: Trophy },
-        { label: 'Profissões', href: '/profissoes', icon: Briefcase },
-        { label: 'Glossário', href: '/glossario', icon: Briefcase }
+        { label: 'Produtos', href: '/produtos', icon: Film },
     ];
 
     return (
