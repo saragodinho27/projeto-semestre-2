@@ -15,16 +15,6 @@ export default function Header() {
 
     return (
         <header className={styles.header}>
-            <div className={styles.logoContainer}>
-                <Image
-                    src="/images/logoCinema.png"
-                    alt="Logo Cinema"
-                    width={200}
-                    height={85}
-                    priority
-                />
-            </div>
-
             <button
                 className={styles.dropbtn}
                 onClick={() => setMenu(menu === '☰' ? '✕' : '☰')}

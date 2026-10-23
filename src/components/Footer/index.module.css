@@ -1,6 +1,6 @@
 .footerContainer {
-    background: #3e050d;
-    background: radial-gradient(circle, #810f1e 0%, #3e050d 100%);
+    background: #00164f;
+    background: linear-gradient(90deg, rgba(0, 22, 79, 1) 0%, rgba(84, 150, 235, 1) 46%, rgba(0, 22, 79, 1) 100%);
     padding: 30px 20px 15px;
     color: #ffffff;
     font-family: system-ui, -apple-system, sans-serif;

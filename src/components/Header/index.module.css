@@ -1,6 +1,6 @@
 .header {
-    background: #3e050d;
-    background: radial-gradient(circle,#810f1e 0%, #3e050d 100%);
+    background: #00164f;
+    background: linear-gradient(90deg, rgba(0, 22, 79, 1) 0%, rgba(84, 150, 235, 1) 46%, rgba(0, 22, 79, 1) 100%);
     padding: 24px 20px;
     display: flex;
     flex-direction: column;
@@ -38,11 +38,11 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    background-color: #4e0b18;
+    background-color: #0b154e;
     color: #ffffff;
     padding: 12px 24px;
     border-radius: 99px;
-    border: 1px solid #8b0b27;
+    border: 1px solid #f8d26a;
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
