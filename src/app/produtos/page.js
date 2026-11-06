@@ -8,6 +8,7 @@ export default function Produtos() {
     const [prods, setProds] = useState(null);
     const [cats, setCats] = useState(null);
     const [prodSelected, setProdSelected] = useState(null);
+    const [busca, setBusca] = useState('');
 
     useEffect(() => {
         const fetchProds = async () => {
@@ -39,16 +40,25 @@ export default function Produtos() {
         fetchCats();
     }, []);
 
-    // crie um fetchCats para buscar as categorias...
 
     const getNomeCategoria = (id_categoria) => {
         const categoria = cats?.find(cat => cat.id === id_categoria);
         return categoria ? categoria.nome : 'Categoria Indefinida';
     }
 
+    const filtro = prods?.filter(p => p.nome.includes(busca));
+
     return (
         < div >
             <h1>Produtos</h1>
+
+            {filtro &&
+                filtro.map((f) => (
+                    <p>{f.nome}</p>
+                ))
+            }
+
+            <input type="text" placeholder="Busque um produto" onChange={(e) => setBusca (e.target.value)} value={busca} />
             {prods === null ?
                 <p>Carregando lista de produtos...</p> :
                 <div>
@@ -79,7 +89,7 @@ export default function Produtos() {
                 </div>
             }
             {/* { como criar uma renderização condicional com base no estado prod?} */}
-            {prodSelected && <CardProd />}
+            {prodSelected && <CardProd produto={prodSelected} />}
         </div >
     )
 }
@@ -94,10 +104,10 @@ export default function Produtos() {
 // \       ^--^         /
 //  \__________________/
 //      |____________|
-//     /              \
-//    |                \        |
-//    |                 \    ___|
-//    |  |     |  |      |__|
+//     /              \          __
+//    |                \        |  |
+//    |                 \    ___|  |
+//    |  |     |  |      |__|  ____|
 //    |  |     |  | __   |____|
 //   _|  |    _|  |/    _|
 //  |____|   |___ |____|

@@ -11,3 +11,7 @@
 .tbl th {
     background-color: rgb(9, 80, 143);
 }
+
+.tbl tr {
+    cursor: pointer;
+}
