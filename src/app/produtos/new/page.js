@@ -3,7 +3,9 @@ export default function NovoProduto() {
         <div>
             <h1>CADASTRO DE PRODUTO</h1>
             <form>
-                
+                <fieldset>
+                    
+                </fieldset>
             </form>
         </div>
     )
