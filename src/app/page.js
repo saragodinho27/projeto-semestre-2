@@ -67,9 +67,6 @@ export default function Home() {
               <p className={styles.quemSomosTexto}>
                 Apenas uma aluna tentando passar no IF. E que ama pássaros..
               </p>
-              <a href="sobre" className={styles.botaoSaibaMais}>
-                Saiba mais
-              </a>
             </div>
           </div>
         </section>

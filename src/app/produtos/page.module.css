@@ -1,17 +1,27 @@
 .tbl {
     border-collapse: collapse;
+    color: black;
 }
 
 .tbl td, .tbl th {
-    border: 1px solid rgb(255, 237, 186);
+    border: 1px solid rgb(106, 12, 1);
     padding: 5px;
     text-align: center;
 }
 
 .tbl th {
-    background-color: rgb(9, 80, 143);
+    background-color: rgb(190, 73, 65);
 }
 
 .tbl tr {
     cursor: pointer;
+    color:black;
+}
+
+.h1 {
+    color: black;
+}
+
+.p {
+    color: black;
 }

@@ -3,12 +3,14 @@ import { useEffect, useState } from "react";
 import styles from './page.module.css';
 import CardProd from "@/components/CardProd";
 
-export default function Produtos() {
 
+
+export default function Produtos() {
     const [prods, setProds] = useState(null);
     const [cats, setCats] = useState(null);
     const [prodSelected, setProdSelected] = useState(null);
     const [busca, setBusca] = useState('');
+
 
     useEffect(() => {
         const fetchProds = async () => {
@@ -46,19 +48,21 @@ export default function Produtos() {
         return categoria ? categoria.nome : 'Categoria Indefinida';
     }
 
-    const filtro = prods?.filter(p => p.nome.includes(busca));
+    // crie a função buscar
 
+    const filtro = prods?.filter(p => p.nome.toLowerCase().includes(busca.toLowerCase()));
+
+    // CRIE A ROTA /produtos/new
     return (
         < div >
             <h1>Produtos</h1>
-
             {filtro &&
                 filtro.map((f) => (
-                    <p>{f.nome}</p>
+                    <p key={f.id}>{f.nome}</p>
                 ))
             }
-
-            <input type="text" placeholder="Busque um produto" onChange={(e) => setBusca (e.target.value)} value={busca} />
+            {/* sempre que o usuário alterar o conteúdo do input, atualize o estado busca */}
+            <input type="text" placeholder="Busque um produto" onChange={(e) => setBusca(e.target.value)} value={busca} />
             {prods === null ?
                 <p>Carregando lista de produtos...</p> :
                 <div>
@@ -93,21 +97,3 @@ export default function Produtos() {
         </div >
     )
 }
-
-//   /\             /\
-//  /  \           /  \
-// / /\ \_________/ /\ \
-// |                    |
-// |                    |
-// | _____      _____   |
-// |                    |
-// \       ^--^         /
-//  \__________________/
-//      |____________|
-//     /              \          __
-//    |                \        |  |
-//    |                 \    ___|  |
-//    |  |     |  |      |__|  ____|
-//    |  |     |  | __   |____|
-//   _|  |    _|  |/    _|
-//  |____|   |___ |____|
