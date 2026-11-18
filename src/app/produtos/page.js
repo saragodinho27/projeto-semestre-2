@@ -1,16 +1,14 @@
 'use client';
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import styles from './page.module.css';
 import CardProd from "@/components/CardProd";
-
-
 
 export default function Produtos() {
     const [prods, setProds] = useState(null);
     const [cats, setCats] = useState(null);
     const [prodSelected, setProdSelected] = useState(null);
     const [busca, setBusca] = useState('');
-
 
     useEffect(() => {
         const fetchProds = async () => {
@@ -19,7 +17,7 @@ export default function Produtos() {
                 if (!response.ok) {
                     throw new Error(`Erro ao buscar Produtos ${response.statusText}`);
                 }
-                const data = await response.json(); // converte os dados (json) para lista de objetos
+                const data = await response.json();
                 console.log(data);
                 setProds(data);
             } catch (e) {
@@ -31,40 +29,48 @@ export default function Produtos() {
 
     useEffect(() => {
         const fetchCats = async () => {
-            const response = await fetch('https://stock.dev.vilhena.ifro.edu.br/api/categorias');
-            if (!response.ok) {
-                throw new Error(`Erro ao buscar Categorias ${response.statusText}`);
+            try {
+                const response = await fetch('https://stock.dev.vilhena.ifro.edu.br/api/categorias');
+                if (!response.ok) {
+                    throw new Error(`Erro ao buscar Categorias ${response.statusText}`);
+                }
+                const data = await response.json();
+                console.log(data);
+                setCats(data);
+            } catch (e) {
+                console.log(`${e.message}`);
             }
-            const data = await response.json();
-            console.log(data);
-            setCats(data);
         }
         fetchCats();
     }, []);
-
 
     const getNomeCategoria = (id_categoria) => {
         const categoria = cats?.find(cat => cat.id === id_categoria);
         return categoria ? categoria.nome : 'Categoria Indefinida';
     }
 
-    // crie a função buscar
-
     const filtro = prods?.filter(p => p.nome.toLowerCase().includes(busca.toLowerCase()));
 
-    // CRIE A ROTA /produtos/new
     return (
-        < div >
-            <h1>Produtos</h1>
-            {filtro &&
-                filtro.map((f) => (
-                    <p key={f.id}>{f.nome}</p>
-                ))
-            }
-            {/* sempre que o usuário alterar o conteúdo do input, atualize o estado busca */}
-            <input type="text" placeholder="Busque um produto" onChange={(e) => setBusca(e.target.value)} value={busca} />
-            {prods === null ?
-                <p>Carregando lista de produtos...</p> :
+        <div className={styles.container}>
+            <div className={styles.topo}>
+                <h1>Produtos</h1>
+                <Link href="/produtos/new" className={styles.btnNovo}>
+                    + Novo Produto
+                </Link>
+            </div>
+
+            <input
+                type="text"
+                placeholder="Busque um produto"
+                onChange={(e) => setBusca(e.target.value)}
+                value={busca}
+                className={styles.inputBusca}
+            />
+
+            {prods === null ? (
+                <p>Carregando lista de produtos...</p>
+            ) : (
                 <div>
                     <table className={styles.tbl}>
                         <thead>
@@ -78,22 +84,26 @@ export default function Produtos() {
                             </tr>
                         </thead>
                         <tbody>
-                            {prods.map((prod) => (
+                            {(busca ? filtro : prods).map((prod) => (
                                 <tr key={prod.id} onClick={() => setProdSelected(prod)}>
                                     <td>{prod.id}</td>
                                     <td>{prod.nome}</td>
                                     <td>{prod.descricao}</td>
                                     <td>{getNomeCategoria(prod.categoria_id)}</td>
                                     <td>{prod.quantidade_estoque}</td>
-                                    <td>{prod.preco}</td>
+                                    <td>R$ {prod.preco}</td>
                                 </tr>
                             ))}
                         </tbody>
                     </table>
                 </div>
-            }
-            {/* { como criar uma renderização condicional com base no estado prod?} */}
-            {prodSelected && <CardProd produto={prodSelected} />}
-        </div >
-    )
+            )}
+
+            {prodSelected && (
+                <div className={styles.cardWrapper}>
+                    <CardProd produto={prodSelected} />
+                </div>
+            )}
+        </div>
+    );
 }

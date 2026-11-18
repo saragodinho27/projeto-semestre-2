@@ -1,4 +1,4 @@
-/* Fundo creme claro igual ao da Home */
+/* Fundo amarelo suave igual ao da listagem */
 .container {
     background-color: #fffcd3;
     min-height: 100vh;
@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-/* Topo com título serifado e botão voltar */
+/* Cabeçalho do formulário (Título + Botão Voltar) */
 .topo {
     width: 100%;
     max-width: 560px;
@@ -30,32 +30,34 @@
     margin: 0;
 }
 
+/* Botão voltar verde-lima igual ao da imagem */
 .btnVoltar {
-    background-color: #bb1212;
-    color: #520000;
-    border: 1px solid #520000;
+    background-color: #ebff99;
+    color: #2a4700;
+    border: 1.5px solid #c9df72;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;
-    padding: 8px 20px;
-    border-radius: 999px;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    padding: 10px 20px;
+    border-radius: 99px;
+    transition: all 0.2s ease-in-out;
 }
 
 .btnVoltar:hover {
-    background-color: #c64a4a;
-    transform: translateY(-1px);
+    background-color: #d9f56b;
+    transform: translateY(-2px);
 }
 
-/* Cartão branco do formulário */
+/* Cartão verde-claro com borda vermelha igual ao da imagem */
 .form {
     width: 100%;
     max-width: 560px;
-    background-color: #ffffff;
+    background-color: #efffc5;
     padding: 32px;
-    border-radius: 20px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-    border: 1px solid #efe4d6;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    border: 2px solid #d22222;
+    box-sizing: border-box;
 }
 
 .fieldset {
@@ -70,7 +72,7 @@
     font-family: 'Georgia', serif;
     font-size: 1rem;
     font-weight: 700;
-    color: #36332f;
+    color: #531600;
     margin-bottom: 8px;
     margin-top: 16px;
 }
@@ -79,16 +81,16 @@
     margin-top: 0;
 }
 
-/* Inputs e Select arredondados */
+/* Inputs e Select verde-lima com foco vermelho */
 .fieldset input,
 .fieldset select {
     width: 100%;
-    padding: 12px 16px;
-    border-radius: 12px;
-    border: 1.5px solid #e2d5c3;
-    background-color: #fdfaf6;
-    font-size: 0.95rem;
-    color: #1f1a17;
+    padding: 14px 16px;
+    border-radius: 14px;
+    border: 1.5px solid #c9df72;
+    background-color: #ebff99;
+    font-size: 1rem;
+    color: #2a4700;
     outline: none;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
     box-sizing: border-box;
@@ -100,47 +102,48 @@
     box-shadow: 0 0 0 3px rgba(151, 7, 7, 0.35);
 }
 
-/* Botões Salvar e Limpar */
+/* Área dos botões Salvar e Limpar */
 .botoes {
     display: flex;
     gap: 14px;
     margin-top: 28px;
 }
 
+/* Botão Salvar vermelho */
 .botoes button[type="submit"] {
     flex: 2;
     background-color: #bb1212;
     color: #520000;
     border: 1px solid #520000;
-    border: none;
-    padding: 14px 24px;
-    border-radius: 999px;
+    padding: 12px 24px;
+    border-radius: 99px;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    transition: all 0.2s ease-in-out;
 }
 
 .botoes button[type="submit"]:hover {
-    background-color: #e85a3a;
+    background-color: #c64a4a;
     transform: translateY(-2px);
 }
 
+/* Botão Limpar creme claro */
 .botoes button[type="reset"] {
     flex: 1;
-    background-color: #f3ece2;
-    color: #5c5752;
-    border: 1.5px solid #dfd3c3;
-    padding: 14px 20px;
-    border-radius: 999px;
+    background-color: #fffcd3;
+    color: #531600;
+    border: 1.5px solid #c9df72;
+    padding: 12px 20px;
+    border-radius: 99px;
     font-size: 0.95rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: all 0.2s ease-in-out;
 }
 
 .botoes button[type="reset"]:hover {
-    background-color: #e6dccf;
+    background-color: #f5f0b5;
 }
 
 @media (max-width: 480px) {

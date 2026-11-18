@@ -1,27 +1,143 @@
-.tbl {
-    border-collapse: collapse;
-    color: black;
+/* Fundo amarelo suave igual ao de Pedidos */
+.container {
+    background-color: #fffcd3;
+    min-height: 100vh;
+    padding: 48px 24px;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #1f1a17;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.tbl td, .tbl th {
-    border: 1px solid rgb(106, 12, 1);
-    padding: 5px;
-    text-align: center;
+/* Cabeçalho da página (Título + Botão Novo Produto) */
+.topo {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.topo h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1f1a17;
+    margin: 0;
+}
+
+/* Botão vermelho arredondado igual ao .btnNovo de Pedidos */
+.btnNovo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #bb1212;
+    color: #520000;
+    padding: 10px 20px;
+    border-radius: 99px;
+    border: 1px solid #520000;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: all 0.2s ease-in-out;
+}
+
+.btnNovo:hover {
+    background-color: #c64a4a;
+    transform: translateY(-2px);
+}
+
+/* Campo de busca verde-lima */
+.inputBusca {
+    width: 100%;
+    max-width: 1000px;
+    padding: 14px 20px;
+    border-radius: 14px;
+    border: 1.5px solid #c9df72;
+    background-color: #ebff99;
+    font-size: 1rem;
+    color: #2a4700;
+    margin-bottom: 24px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+}
+
+.inputBusca:focus {
+    border-color: #c41212;
+    box-shadow: 0 0 0 3px rgba(151, 7, 7, 0.35);
+}
+
+/* Container da tabela com bordas arredondadas */
+.container > div:has(.tbl) {
+    width: 100%;
+    max-width: 1000px;
+    overflow-x: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    background-color: #ffffff;
+}
+
+.tbl {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+/* Cabeçalho da tabela vermelho */
+.tbl thead {
+    background-color: #c41818;
+    color: #111313;
 }
 
 .tbl th {
-    background-color: rgb(190, 73, 65);
+    padding: 16px 20px;
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
 }
 
-.tbl tr {
+.tbl td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #fffcd3;
+    font-size: 0.95rem;
+    color: #531600;
+}
+
+.tbl tbody tr {
     cursor: pointer;
-    color:black;
+    transition: background-color 0.15s ease;
 }
 
-.h1 {
-    color: black;
+.tbl tbody tr:hover {
+    background-color: #fffcd3;
 }
 
-.p {
-    color: black;
+.tbl tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Espaçamento para o CardProd quando um produto é clicado */
+.cardWrapper {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 28px;
+}
+
+@media (max-width: 600px) {
+    .topo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tbl th, .tbl td {
+        padding: 12px 14px;
+        font-size: 0.85rem;
+    }
 }

@@ -10,9 +10,9 @@ export default function Header() {
 
     const navItems = [
         { label: 'Início', href: '/', icon: Home },
+        { label: 'Categorias', href: '/categorias', icon: Mail },
         { label: 'Loja', href: '/produtos', icon: Store },
-        { label: 'Clientes', href: '/sobre', icon: Heart },
-        { label: 'Contato', href: '/contato', icon: Mail },
+        { label: 'Clientes', href: '/clientes', icon: Heart },
     ];
 
     return (

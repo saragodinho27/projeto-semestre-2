@@ -1,0 +1,159 @@
+/* Fundo amarelo suave igual ao da listagem */
+.container {
+    background-color: #fffcd3;
+    min-height: 100vh;
+    padding: 48px 24px;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #1f1a17;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabeçalho do formulário (Título + Botão Voltar) */
+.topo {
+    width: 100%;
+    max-width: 560px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.topo h1 {
+    font-family: 'Georgia', serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #1f1a17;
+    margin: 0;
+}
+
+/* Botão voltar verde-lima igual ao menu da loja */
+.btnVoltar {
+    background-color: #ebff99;
+    color: #2a4700;
+    border: 1.5px solid #c9df72;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 99px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btnVoltar:hover {
+    background-color: #d9f56b;
+    transform: translateY(-2px);
+}
+
+/* Cartão do formulário no mesmo tom do .detalhesBox de Pedidos */
+.form {
+    width: 100%;
+    max-width: 560px;
+    background-color: #efffc5;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    border: 2px solid #d22222;
+    box-sizing: border-box;
+}
+
+.fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldset label {
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #531600;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+.fieldset label:first-child {
+    margin-top: 0;
+}
+
+/* Inputs e Textarea no padrão verde-lima com foco vermelho */
+.fieldset input,
+.fieldset select,
+.fieldset textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 14px;
+    border: 1.5px solid #c9df72;
+    background-color: #ebff99;
+    font-size: 1rem;
+    color: #2a4700;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+}
+
+.fieldset input:focus,
+.fieldset select:focus,
+.fieldset textarea:focus {
+    border-color: #c41212;
+    box-shadow: 0 0 0 3px rgba(151, 7, 7, 0.35);
+}
+
+/* Área dos botões Salvar e Limpar */
+.botoes {
+    display: flex;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+/* Botão Salvar no vermelho padrão do sistema */
+.botoes button[type="submit"] {
+    flex: 2;
+    background-color: #bb1212;
+    color: #520000;
+    border: 1px solid #520000;
+    padding: 12px 24px;
+    border-radius: 99px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.botoes button[type="submit"]:hover {
+    background-color: #c64a4a;
+    transform: translateY(-2px);
+}
+
+/* Botão Limpar suave */
+.botoes button[type="reset"] {
+    flex: 1;
+    background-color: #fffcd3;
+    color: #531600;
+    border: 1.5px solid #c9df72;
+    padding: 12px 20px;
+    border-radius: 99px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.botoes button[type="reset"]:hover {
+    background-color: #f5f0b5;
+}
+
+@media (max-width: 480px) {
+    .form {
+        padding: 24px 20px;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+}
