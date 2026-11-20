@@ -11,7 +11,6 @@ export default function NovoPedido() {
     const [prods, setProds] = useState([]);
     const [erro, setErro] = useState('');
 
-    // Carrega os clientes da API
     useEffect(() => {
         const fetchClientes = async () => {
             try {
@@ -27,7 +26,6 @@ export default function NovoPedido() {
         fetchClientes();
     }, []);
 
-    // Carrega os produtos da API
     useEffect(() => {
         const fetchProds = async () => {
             try {

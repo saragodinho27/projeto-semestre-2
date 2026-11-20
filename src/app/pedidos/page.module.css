@@ -28,7 +28,6 @@
     margin: 0;
 }
 
-/* Botão laranja-coral arredondado igual aos CTAs da Home */
 .btnNovo {
     display: flex;
     align-items: center;
@@ -50,7 +49,6 @@
     transform: translateY(-2px);
 }
 
-/* Campo de busca arredondado */
 .inputBusca {
     width: 100%;
     max-width: 1000px;
@@ -70,7 +68,6 @@
     box-shadow: 0 0 0 3px rgba(151, 7, 7, 0.35);
 }
 
-/* Container da tabela com bordas arredondadas */
 .container > div:has(.tbl) {
     width: 100%;
     max-width: 1000px;
@@ -86,7 +83,6 @@
     text-align: left;
 }
 
-/* Cabeçalho da tabela no azul-turquesa da seção "Quem somos" */
 .tbl thead {
     background-color: #c41818;
     color: #111313;
@@ -120,7 +116,6 @@
     border-bottom: none;
 }
 
-/* Cartão de detalhes ao clicar em um pedido */
 .detalhesBox {
     width: 100%;
     max-width: 500px;

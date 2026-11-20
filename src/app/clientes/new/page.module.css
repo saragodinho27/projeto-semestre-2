@@ -1,4 +1,3 @@
-/* Fundo amarelo suave igual ao das listagens */
 .container {
     background-color: #fffcd3;
     min-height: 100vh;
@@ -10,7 +9,6 @@
     align-items: center;
 }
 
-/* Cabeçalho do formulário (Título + Botão Voltar) */
 .topo {
     width: 100%;
     max-width: 560px;
@@ -30,7 +28,6 @@
     margin: 0;
 }
 
-/* Botão voltar verde-lima */
 .btnVoltar {
     background-color: #ebff99;
     color: #2a4700;
@@ -48,7 +45,6 @@
     transform: translateY(-2px);
 }
 
-/* Cartão verde-claro com borda vermelha */
 .form {
     width: 100%;
     max-width: 560px;
@@ -81,7 +77,6 @@
     margin-top: 0;
 }
 
-/* Inputs verde-lima com foco vermelho */
 .fieldset input {
     width: 100%;
     padding: 14px 16px;
@@ -100,14 +95,12 @@
     box-shadow: 0 0 0 3px rgba(151, 7, 7, 0.35);
 }
 
-/* Área dos botões Salvar e Limpar */
 .botoes {
     display: flex;
     gap: 14px;
     margin-top: 28px;
 }
 
-/* Botão Salvar vermelho */
 .botoes button[type="submit"] {
     flex: 2;
     background-color: #bb1212;
@@ -126,7 +119,6 @@
     transform: translateY(-2px);
 }
 
-/* Botão Limpar creme claro */
 .botoes button[type="reset"] {
     flex: 1;
     background-color: #fffcd3;
